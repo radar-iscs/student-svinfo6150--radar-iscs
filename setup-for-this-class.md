@@ -41,9 +41,12 @@ Be sure to configure it as mentioned further down!
 
 ### Text Editor
 You will need a text editor or IDE of your choice (note: A Text Editor is NOT a word processor).  Some popular (and free of cost) available ones include VSCode, Atom, Brackets, or Notepad++ (windows), while some commercial ones that allow limited free demos include SublimeText and WebStorm.  Those users familiar with more old-school editors such as vim or emacs are welcome to use them.
-* NOTE: I highly recommend having a specific directory(folder) to hold material from the class.  Students that just work out of "Documents" or "Downloads" quickly find their work lost among other files there.
+
+If you do not have a preferred IDE, I recommend VSCode, which is free of cost and very commonly used in the web development industry.
+
+* NOTE: I highly recommend having a specific directory(folder) to hold material from the class.  Students that just work out of "Documents"/"Downloads"/"My Documents" quickly find their work lost among other files there.
 * NOTE: Directory (folder) names ARE case sensitive.  This can be tricky if you mess it up.  Mac (for example) will pretend to be case insensitive, but once you start talking to git it will break.  So always be precise, which is a good practice for programming anyway.
-* NOTE: I recommend AGAINST having spaces in directory(folder) names.  Spaces make command-line commands hard to run, and you WILL be running some commands on the command line.
+* NOTE: I recommend AGAINST having spaces in directory(folder) names.  Spaces make command-line commands hard to run, and you will be running some commands on the command line.
   - Good: ~/class/info6150/
   - Bad: ~/My Documents/
   - Bad: ~/Documents/
@@ -69,9 +72,10 @@ Do the following, which will let me (and you) know that everything is working.  
 
 1. Complete all the installation and config steps above
 2. If you have not already followed the below link to create your own copy of the class repo on github, follow it now:
-    * https://rebrand.ly/svinfo6150-github
-3. If you have not cloned the repository this file is in to your computer, do so now (`git clone value-from-the-code-button-on-github`)
-    * the `value-from-code-button-on-github` is an instruction, you should replace that value with the value you can copy when you click the "code" button on the repo in github.
+    - https://rebrand.ly/svinfo6150-github
+    - This will involve a delay because I have to create your copy of the repo and assign permissions
+3. If you have not cloned the repository this file is in to your computer, do so now (`git clone VALUE-FROM-THE-CODE-BUTTON-ON-GITHUB`)
+    * the `VALUE-FROM-CODE-BUTTON-ON-GITHUB` is an instruction, you should replace that value with the value you can copy when you click the "code" button on the repo in github.
     * After cloning, be sure to be in the correct directory, the root directory of the project, that is, the directory that git clone just created
 5. Change into the repo directory (`cd student-info6150--YOUR_GITHUB_ID`) on the command line
 6. Change into the work/01-setup-test directory in the repo (`cd work/01-setup-test`)
@@ -82,6 +86,8 @@ Do the following, which will let me (and you) know that everything is working.  
 Here are some resources you can use to get started if you feel particularly lost.
 * https://guides.github.com/activities/hello-world/ (fully web-based to focus on the concepts)
 * https://www.youtube.com/githubguides
+
+I will also provide a recording that covers the basics of git usage in this course (and in most future jobs).
 
 You don't need to be strong with git/github at this point, so long as you are able to navigate the steps above, but I highly recommend improving your git skills as git is used in many, MANY workplaces, and even in those that don't you will often work with open-source libraries that use git.
 
