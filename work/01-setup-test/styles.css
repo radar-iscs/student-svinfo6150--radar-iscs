@@ -1,0 +1,9 @@
+li {
+  font-weight: bold;
+  
+  span {
+    margin-left: 6px;
+    font-weight: normal;
+    font-style: italic;
+  }
+}
