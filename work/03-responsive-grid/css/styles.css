@@ -1,0 +1,170 @@
+/* common */
+html {
+  font-size: 0.8rem;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #dddddd !important;
+}
+
+button:active {
+  background-color: #d6d6d6 !important;
+}
+
+/* top section */
+header {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 
+  "logo title"
+  "header-menu header-menu"
+  ;
+}
+
+header .logo {
+  grid-area: logo;
+
+  width: 100px;
+  height: 50px;
+  justify-self: center;
+  align-self: center;
+}
+
+header .title {
+  grid-area: title;
+
+  align-self: center;
+  font-size: 1.5em;
+}
+
+header .header-menu {
+  grid-area: header-menu;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  width: 100%;
+  padding: 0;
+  background-color: #B7B7B7;
+}
+
+header .header-menu li {
+  text-align: center;
+}
+
+header .header-menu li a {
+  display: inline-block;
+  padding: 12px 20px;
+  height: calc(100% - 24px);
+
+  align-content: center;
+  color: #F5F5F7;
+}
+
+/* middle section */
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0.5rem;
+
+  padding: 2rem 1rem;
+}
+
+.main-content .subtitle {
+  grid-column: span 12;
+
+  justify-self: center;
+}
+
+.main-content .card {
+  grid-column: span 4;
+
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px 10px 10px;
+
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #F5F5F7;
+}
+
+.main-content .card .card-img {
+  max-height: 200px;
+}
+.main-content .card h3 {
+  margin: 10px 0 0 0;
+
+  text-align: center;
+}
+
+.main-content .card p {
+  flex: 1;
+}
+
+.main-content .card .card-btn {
+  width: 70%;
+  height: 30px;
+  margin: auto;
+
+  justify-items: center;
+  border-radius: 10px;
+  border: 0;
+
+  background-color: #e6e6e6;
+}
+
+/* bottom section */
+footer {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-areas: 
+  /* in order to meet the requirements on README */
+  /* "it will need to be a DIFFERENT grid as defined by CSS, but the 12 columns should fall in the same places" */
+  "link link link link link link link link link link link link"
+  ;
+
+  padding: 1rem;
+
+  background-color: #B7B7B7;
+}
+
+footer a {
+  grid-column: span 4;
+
+  justify-self: center;
+  color: #F5F5F7;
+}
+
+@media (max-width: 50rem) {
+  header {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "logo"
+    "title"
+    "header-menu"
+    ;
+    
+    justify-items: center;
+  }
+
+  header .header-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content .card {
+    grid-column: span 12;
+  }
+
+  footer a {
+    grid-column: span 12;
+  }
+}
