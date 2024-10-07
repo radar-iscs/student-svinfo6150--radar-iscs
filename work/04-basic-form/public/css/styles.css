@@ -1,0 +1,168 @@
+/* common */
+html {
+  font-size: 0.8rem;
+}
+
+body {
+  margin: 0;
+}
+
+#homepage {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  height: 100vh;
+  background-color: #dcedc1;
+}
+
+/* top section */
+header {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  width: 100px;
+  height: 50px;
+}
+
+header .title {
+  margin-left: 10px;
+}
+
+/* middle section */
+main {
+  min-width: 400px;
+
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  background-color: #f6f6f6;
+}
+
+.register-form .form-title {
+  text-align: center;
+}
+
+.register-form .form-settings {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  row-gap: 15px;
+
+  margin-top: 20px;
+}
+
+.form-settings .description {
+  grid-column: span 1;
+
+  padding-right: 20px;
+  text-align: right;
+}
+
+.form-settings .description:after {
+  margin-left: 2px;
+
+  content: '*';
+  color: red;
+}
+
+.form-settings .operation {
+  grid-column: span 1;
+
+  padding: 0 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.form-settings .operation:invalid {
+  border-color: #fc5185;
+}
+
+.form-settings .operation:focus {
+  outline-width: 0;
+}
+
+.form-settings .annoy-check {
+  grid-column: span 2;
+
+  display: flex;
+  margin-top: 20px;
+  justify-content: right;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-settings .annoy-check input {
+  cursor: pointer;
+}
+
+.form-settings .annoy-check label {
+  margin-left: 2px;
+
+  cursor: pointer;
+}
+
+.form-settings .submit-button {
+  grid-column: span 2;
+
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
+
+  justify-self: center;
+  border: 0;
+  border-radius: 5px;
+  background-color: #bad390;
+}
+
+.form-settings .submit-button:hover {
+  cursor: pointer;
+  background-color: #c3de96;
+}
+
+.form-settings .submit-button:active {
+  background-color: #aac086;
+}
+
+/* bottom section */
+footer {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  height: 25px;
+  padding-left: 10px;
+
+  align-content: center;
+  background-color: #B7B7B7;
+}
+
+footer a {
+  color: #f6f6f6;
+}
+
+/* mobile */
+@media (max-width: 40rem) {
+  main {
+    min-width: 300px;
+  }
+
+  .register-form .form-settings {
+    row-gap: 5px;
+  }
+
+  .form-settings .description {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .form-settings .description,
+  .form-settings .operation {
+    grid-column: span 2;
+  }
+}
