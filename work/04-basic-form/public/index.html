@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+  </head>
+  <body>
+    <div id="homepage">
+      <header>
+        <img class="logo" src="https://placehold.co/100x50/aac086/31343C?font=raleway&text=meow" alt="logo">
+        <h1 class="title">Cat Adoptions</h1>
+      </header>
+      <main>
+        <form class="register-form" action="/submit" method="POST">
+          <h2 class="form-title">Sign up</h2>
+          <div class="form-settings">
+            <!-- name input -->
+            <label class="description" for="name">Name</label>
+            <input class="operation" name="name" id="name" placeholder="required" required>
+            <!-- email input -->
+            <label class="description" for="email">Email</label>
+            <input class="operation" type="email" name="email" id="email" placeholder="required" required>
+            <!-- tier select -->
+            <label class="description" for="tier">Choose a tier</label>
+            <select class="operation" name="tier" id="tier" required>
+              <option value="">--Please Select--</option>
+              <option value="1">Silver Tier</option>
+              <option value="2">Gold Tier</option>
+              <option value="3">Platinum Tier</option>
+            </select>
+            <!-- checkbox -->
+            <div class="annoy-check">
+              <input type="checkbox" name="annoy-me" id="annoy-me" checked>
+              <label for="annoy-me">Do you want us to send you annoying emails?</label>
+            </div>
+            <!-- register button -->
+            <button class="submit-button" type="submit">Register</button >
+          </div>
+        </form>
+      </main>
+      <footer>
+        We do care about your privacy, see our <a href="privacy.html">Privacy Policy</a>
+      </footer>
+    </div>
+  </body>
+</html>
