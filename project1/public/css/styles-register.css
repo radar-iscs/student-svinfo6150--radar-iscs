@@ -1,0 +1,108 @@
+#homepage {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+  min-height: 100vh;
+}
+
+main {
+  min-width: 300px;
+
+  margin: auto;
+  padding: 10px 20px;
+
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #f6f6f6;
+}
+  
+.form__title {
+  text-align: center;
+}
+
+.form__settings {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 5px;
+
+  margin-top: 20px;
+}
+  
+.form__settings .description {
+  grid-column: span 12;
+
+  padding-right: 20px;
+  margin-top: 10px;
+
+  text-align: left;
+}
+
+.form__settings .description.required:after {
+  margin-left: 2px;
+
+  content: '*';
+  color: red;
+}
+
+.form__settings .operation {
+  grid-column: span 12;
+
+  padding: 0 10px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.form__settings .operation:invalid {
+  border-color: #fc5185;
+}
+
+.form__settings .operation:focus {
+  outline-width: 0;
+}
+  
+.form__settings .posted-check {
+  grid-column: span 12;
+
+  display: flex;
+  margin-top: 20px;
+  justify-content: right;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.form__settings .posted-check input {
+  cursor: pointer;
+}
+
+.form__settings .posted-check label {
+  margin-left: 2px;
+
+  cursor: pointer;
+}
+
+.form__settings .submit-button {
+  grid-column: span 12;
+
+  width: 100px;
+  height: 30px;
+  margin: 0 auto 10px auto;
+
+  justify-self: center;
+  border: 0;
+  border-radius: 5px;
+  background-color: #bad390;
+}
+
+.form__settings .submit-button:hover {
+  cursor: pointer;
+  background-color: #c3de96 !important;
+}
+
+.form__settings .submit-button:active {
+  background-color: #aac086 !important;
+}

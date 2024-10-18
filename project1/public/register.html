@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Register - All About Cats</title>
+    <link rel="stylesheet" href="/css/styles-common.css"/>
+    <link rel="stylesheet" href="/css/styles-register.css"/>
+  </head>
+  <body>
+    <div id="homepage">
+      <header>
+        <!-- logo & title -->
+        <div class="logo">
+          <a class="logo__pic" href="index.html"><img src="/assets/logo.jpg" alt="logo"></a>
+          <h1 class="logo__title">Register - All About Cats</h1>
+        </div>
+        <!-- navigation bar -->
+        <nav class="nav">
+          <!-- menu -->
+          <div class="nav__dropdown menu">
+            <button class="nav__dropdown-btn">
+              <div class="nav__dropdown-wrapper">
+                <img src="/assets/icon_menu.svg" alt="icon_menu">
+                Menu
+              </div>
+            </button>
+            <div class="nav__dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="register.html">Register</a>
+            </div>
+          </div>
+          <!-- external-links -->
+          <div class="nav__dropdown external-links">
+            <button class="nav__dropdown-btn">
+              <div class="nav__dropdown-wrapper">
+                <img src="/assets/icon_external.svg" alt="icon_menu">
+                External Links
+              </div>
+            </button>
+            <div class="nav__dropdown-content">
+              <a href="https://en.wikipedia.org/wiki/Cat" target="_blank">Wikipedia</a>
+              <a href="https://www.google.com/search?sca_esv=3779ba0312543554&q=cat&udm=2&fbs=AEQNm0A-5VTqs5rweptgTqb6m-Eb3TvVcv4l7eCyod9RtZW9874wvsYjTfpwMQKGHqKPG-IB7j9flyfH28tJSLVuVdcT1tesPpIhTR_8sOQ3FQrQWiVTfWhoIplDgGh5JzUv9F4u3riMB636EHR41DrkNY_uSRk347tLZsVeJqqyuWPTyXrtg-EYkFQYZqw6rWM1khGHS26HrYFGhj2QeE1uCS-2MrLbBw&sa=X&ved=2ahUKEwjo89q6p42JAxXaJNAFHZORBN0QtKgLegQIIxAB&biw=1280&bih=585&dpr=1.5" target="_blank">Google Images</a>
+              <a href="https://www.youtube.com/@AllAboutCatsYT?app=desktop" target="_blank">Youtube Videos</a>
+            </div>
+          </div>
+      </header>
+      <main>
+        <form class="form" action="/register" method="POST">
+            <h2 class="form__title">Sign up</h2>
+            <div class="form__settings">
+              <!-- name input -->
+              <label class="description required" for="name">Name</label>
+              <input class="operation" name="name" id="name" placeholder="required" required>
+              <!-- email input -->
+              <label class="description required" for="email">Email</label>
+              <input class="operation" type="email" name="email" id="email" placeholder="required" required>
+              <!-- amount select -->
+              <label class="description" for="cats-amount">How many cats do you have now</label>
+              <select class="operation" name="cats-amount" id="cats-amount">
+                <option value="">--Please Select--</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three or more</option>
+              </select>
+              <!-- posted checkbox -->
+              <div class="posted-check">
+                <input type="checkbox" name="keep-posted" id="keep-posted">
+                <label for="keep-posted">Keep me posted for any updates</label>
+              </div>
+              <!-- register button -->
+              <button class="submit-button" type="submit">Register</button >
+            </div>
+          </form>
+      </main>
+      <footer>
+        <a class="link" href="join.html">Join Us</a>
+        <a class="link" href="contact.html">Contact</a>
+        <a class="link" href="policy.html">Privacy policy</a>
+      </footer>
+    </div>
+  </body>
+</html>
