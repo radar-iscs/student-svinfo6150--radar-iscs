@@ -15,16 +15,14 @@ body {
 }
   
 img {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 img.top {
-  object-fit: cover;
   object-position: top;
 }
 
 img.center {
-  object-fit: cover;
   object-position: center;
 }
 

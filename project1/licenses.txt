@@ -1,12 +1,47 @@
-- From unsplash.com:
-https://unsplash.com/photos/a-black-cat-with-glowing-yellow-eyes-in-the-dark-ttAx6SXsWlc
-https://unsplash.com/photos/macro-photography-of-grey-cat-3oNWY7MeTiw
-https://unsplash.com/photos/a-close-up-of-a-cat-with-blue-eyes-lzeZ85FG4zs
-https://unsplash.com/photos/closeup-photo-of-white-and-black-siamese-cat-2eRHP71tkRY
-https://unsplash.com/photos/a-small-toy-tiger-sitting-on-a-blue-surface-fsNM8TZsaIw
-https://unsplash.com/photos/a-shelf-with-hello-kitty-figurines-on-it-mAaJ2QzsFKM
-https://unsplash.com/photos/russian-blue-cat-wearing-yellow-sunglasses-yMSecCHsIBc
-https://unsplash.com/photos/white-and-red-ceramic-cat-figurines-wIiGUGKz4oI
+From unsplash.com:
+1. logo.jpg
+   - Source: https://unsplash.com/photos/a-black-cat-with-glowing-yellow-eyes-in-the-dark-ttAx6SXsWlc
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Anupa Uthsara on Unsplash
 
-- From personally owned:
-about_apollo.jpg
+2. type_british-shorthair.jpg
+   - Source: https://unsplash.com/photos/macro-photography-of-grey-cat-3oNWY7MeTiw
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Josh Couch on Unsplash
+
+3. type_ragdoll.jpg
+   - Source: https://unsplash.com/photos/a-close-up-of-a-cat-with-blue-eyes-lzeZ85FG4zs
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Anna on Unsplash
+
+4. type_siamese.jpg
+   - Source: https://unsplash.com/photos/closeup-photo-of-white-and-black-siamese-cat-2eRHP71tkRY
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Dimitry Kooijmans on Unsplash
+
+5. historical_garfield.jpg
+   - Source: https://unsplash.com/photos/a-small-toy-tiger-sitting-on-a-blue-surface-fsNM8TZsaIw
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Jazmin Manchester on Unsplash
+
+6. historical_hello-kitty.jpg
+   - Source: https://unsplash.com/photos/a-shelf-with-hello-kitty-figurines-on-it-mAaJ2QzsFKM
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Eric Prouzet on Unsplash
+
+7. historical_sunglass-cat.jpg
+   - Source: https://unsplash.com/photos/russian-blue-cat-wearing-yellow-sunglasses-yMSecCHsIBc
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Raoul Droog on Unsplash
+
+8. historical_lucky-cat.jpg
+   - Source: https://unsplash.com/photos/white-and-red-ceramic-cat-figurines-wIiGUGKz4oI
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Charlie Firth on Unsplash
+
+
+From personally owned:
+1. about_apollo.jpg
+   - Source: Myself
+   - License: Public Domain (CC0)
+   

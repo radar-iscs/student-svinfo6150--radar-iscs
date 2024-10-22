@@ -35,17 +35,14 @@ main {
   grid-column: span 4;
 }
 
-.news .collection__card-img {
-  object-fit: contain;
-}
-
 .historical .collection__card {
   grid-column: span 3;
 }
 
 .collection__card .collection__card-img {
-  max-height: 300px;
+  height: 200px;
 }
+
 .collection__card h3 {
   margin: 10px 0 0 0;
 
@@ -72,5 +69,9 @@ main {
 @media (max-width: 50rem) {
   .collection__card {
     grid-column: span 12 !important;
+  }
+
+  .collection__card .collection__card-img {
+    height: 300px;
   }
 }
