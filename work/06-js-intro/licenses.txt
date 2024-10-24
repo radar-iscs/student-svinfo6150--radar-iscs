@@ -1,0 +1,20 @@
+From unsplash.com:
+1. logo.jpg
+   - Source: https://unsplash.com/photos/a-black-cat-with-glowing-yellow-eyes-in-the-dark-ttAx6SXsWlc
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Anupa Uthsara on Unsplash
+
+2. type_british-shorthair.jpg
+   - Source: https://unsplash.com/photos/macro-photography-of-grey-cat-3oNWY7MeTiw
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Josh Couch on Unsplash
+
+3. type_ragdoll.jpg
+   - Source: https://unsplash.com/photos/a-close-up-of-a-cat-with-blue-eyes-lzeZ85FG4zs
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Anna on Unsplash
+
+4. type_siamese.jpg
+   - Source: https://unsplash.com/photos/closeup-photo-of-white-and-black-siamese-cat-2eRHP71tkRY
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Dimitry Kooijmans on Unsplash
