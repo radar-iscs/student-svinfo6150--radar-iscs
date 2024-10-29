@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <script defer src="/js/handler.js"></script>
+  </head>
+  <body>
+    <div id="homepage">
+      <header>
+        <img class="logo" src="https://placehold.co/100x50/aac086/31343C?font=raleway&text=meow" alt="logo">
+        <h1 class="title">Cat Adoptions</h1>
+      </header>
+      <main>
+        <form class="register-form" action="/register" method="POST">
+          <h2 class="form-title">Sign up</h2>
+          <div class="form-settings">
+            <!-- name input -->
+            <label class="description required" for="name">Name</label>
+            <input class="operation name" name="name" id="name" placeholder="required">
+            <span class="error name"></span>
+            <!-- email input -->
+            <label class="description required" for="email">Email</label>
+            <input class="operation email" type="text" name="email" id="email" placeholder="required">
+            <span class="error email"></span>
+            <!-- email confirm -->
+            <label class="description required" for="email-confirm">Confirm Email</label>
+            <input class="operation email-confirm" type="text" name="email-confirm" id="email-confirm" placeholder="required">
+            <span class="error email-confirm"></span>
+            <!-- tier select -->
+            <label class="description" for="tier">Choose a tier</label>
+            <select class="operation tier" name="tier" id="tier">
+              <option value="">--Please Select--</option>
+              <option value="1">Silver Tier</option>
+              <option value="2">Gold Tier</option>
+              <option value="3">Platinum Tier</option>
+            </select>
+            <span class="error tier"></span>
+            <!-- checkbox -->
+            <div class="spam-check">
+              <input type="checkbox" name="wants-spam" id="wants-spam" checked>
+              <label for="wants-spam">Keep me posted for any updates</label>
+            </div>
+            <!-- register button -->
+            <button class="submit-button" type="submit">Register</button >
+          </div>
+        </form>
+      </main>
+      <footer>
+        We do care about your privacy, see our <a href="privacy.html">Privacy Policy</a>
+      </footer>
+    </div>
+  </body>
+</html>
