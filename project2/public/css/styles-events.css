@@ -1,0 +1,17 @@
+h2.center,
+p.center {
+  text-align: center;
+}
+
+main img {
+  object-fit: contain;
+  
+  max-height: 400px;
+  margin-top: 0.5rem;
+}
+
+.main-content::first-letter {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: lightcoral;
+}

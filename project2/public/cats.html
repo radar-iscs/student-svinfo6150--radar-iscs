@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Famous Cats - All About Cats</title>
+    <link rel="stylesheet" href="/css/styles-common.css"/>
+    <link rel="stylesheet" href="/css/styles-cats.css"/>
+    <script defer src="/js/dropdown-handler.js"></script>
+    <script defer src="/js/subscribe-handler.js"></script>
+  </head>
+  <body>
+    <a class="skiplink" href="#main">Skip to content</a>
+    <div id="homepage">
+      <header>
+        <!-- top bar -->
+        <div class="topbar"> 
+          <a class="logo__pic" href="/"><img src="/assets/logo.jpg" alt=""></a>
+          <h1 class="logo__title">Famous Internet Cats</h1>
+          <!-- navigation btn -->
+          <button class="nav__dropdown-btn" aria-label="Show Navigation Menu">
+            <img src="/assets/icon_menu.svg" alt="icon_menu" aria-hidden="true" focusable="false">
+          </button>
+        </div>
+        <!-- navigation menu -->
+        <div class="nav__dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="cats.html">Famous Cats</a>
+          <a href="events.html">Cat Events</a>
+        </div>
+      </header>
+      <main id="main">
+        <dialog class="modal">
+          <div class="subscribe-box">
+            <h3>Subscribe to the Latest Mews!</h3>
+            <form class="form__settings" action="/subscribe" method="POST" id="subscribe-form">
+              <!-- email input -->
+              <label class="description required" for="email">Email</label>
+              <input class="operation email" type="text" name="email" id="email" placeholder="required">
+              <span class="error email"></span>
+              <!-- email confirm -->
+              <label class="description required" for="email-confirm">Confirm Email</label>
+              <input class="operation email-confirm" type="text" name="email-confirm" id="email-confirm" placeholder="required">
+              <span class="error email-confirm"></span>
+            </form>
+            <!-- submit & cancel button -->
+            <div class="form__buttons">
+              <button class="form__button submit" type="submit" form="subscribe-form">Register</button>
+              <button class="form__button cancel" type="button">Cancel</button>
+            </div>
+          </div>
+        </dialog>
+        <div class="collection">
+          <div class="collection__card">
+            <h3>Siamese</h3>
+            <img class="collection__card-img" src="/assets/type_siamese.jpg" alt="Siamese">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <br><br>
+              Please <button class="collection__card-btn">Subscribe</button> to get more information.
+            </p>
+          </div>
+          <div class="collection__card">
+            <h3>Garfield</h3>
+            <img class="collection__card-img center" src="/assets/type_garfield.jpg" alt="Garfield">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <br><br>
+              Please <button class="collection__card-btn">Subscribe</button> to get more information.
+            </p>
+          </div>
+          <div class="collection__card">
+            <h3>Hello Kitty</h3>
+            <img class="collection__card-img top" src="/assets/type_hello-kitty.jpg" alt="Hello Kitty">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              <br><br>
+              Please <button class="collection__card-btn">Subscribe</button> to get more information.
+            </p>
+          </div>
+          <div class="collection__card">
+            <h3>Sunglass Cat</h3>
+            <img class="collection__card-img" src="/assets/type_sunglass-cat.jpg" alt="Sunglass Cat">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              <br><br>
+              Please <button class="collection__card-btn">Subscribe</button> to get more information.
+            </p>
+          </div>
+          <div class="collection__card">
+            <h3>Lucky Cat</h3>
+            <img class="collection__card-img center" src="/assets/type_lucky-cat.jpg" alt="Lucky Cat">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <br><br>
+              Please <button class="collection__card-btn">Subscribe</button> to get more information.
+            </p>
+          </div>
+          <div class="collection__card">
+            <h3>Apollo</h3>
+            <img class="collection__card-img center" src="/assets/type_apollo.jpg" alt="Apollo">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <br><br>
+              Please <button class="collection__card-btn">Subscribe</button> to get more information.
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <a class="link" href="policy.html">Privacy policy</a>
+        <a class="link" href="join.html">Work for Us</a>
+        <a class="link" href="contact.html">Contact Us</a>
+        <a class="link" href="media.html">Social Media</a>
+      </footer>
+    </div>
+  </body>
+</html>
