@@ -34,6 +34,10 @@
 
 /* mobile layout */
 @media (max-width: 44rem) {
+  main {
+    padding: 0;
+  }
+  
   .article {
     display: block;
 
