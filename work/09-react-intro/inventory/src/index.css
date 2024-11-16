@@ -1,0 +1,16 @@
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  
+  align-content: center;
+}
+
+button {
+  min-width: 60px;
+  padding: 5px 10px;
+
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
