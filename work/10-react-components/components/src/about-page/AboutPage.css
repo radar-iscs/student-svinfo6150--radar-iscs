@@ -1,0 +1,12 @@
+.text-page {
+  display: flex;
+  
+  align-items: center;
+}
+  
+.control-panel button {
+  margin: 0 20px;
+  
+  font-size: 2rem;
+  background-color: lightblue;
+}

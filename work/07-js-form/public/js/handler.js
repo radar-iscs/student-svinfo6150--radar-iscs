@@ -78,27 +78,27 @@
   }
 
   function render() {
-    if (state.nameErr) {
-      nameEl.classList.add('invalid');
-    } else {
-      nameEl.classList.remove('invalid');
-    }
+    // if (state.nameErr) {
+    //   nameEl.classList.add('invalid');
+    // } else {
+    //   nameEl.classList.remove('invalid');
+    // }
     const nameErrEl = document.querySelector('.error.name');
     nameErrEl.innerHTML = state.nameErr;
 
-    if (state.emailErr) {
-      emailEl.classList.add('invalid');
-    } else {
-      emailEl.classList.remove('invalid');
-    }
+    // if (state.emailErr) {
+    //   emailEl.classList.add('invalid');
+    // } else {
+    //   emailEl.classList.remove('invalid');
+    // }
     const emailErrEl = document.querySelector('.error.email');
     emailErrEl.innerHTML = state.emailErr;
 
-    if (state.emailConfirmErr) {
-      emailConfirmEl.classList.add('invalid');
-    } else {
-      emailConfirmEl.classList.remove('invalid');
-    }
+    // if (state.emailConfirmErr) {
+    //   emailConfirmEl.classList.add('invalid');
+    // } else {
+    //   emailConfirmEl.classList.remove('invalid');
+    // }
     const emailConfirmErrEl = document.querySelector('.error.email-confirm');
     emailConfirmErrEl.innerHTML = state.emailConfirmErr;
   }
