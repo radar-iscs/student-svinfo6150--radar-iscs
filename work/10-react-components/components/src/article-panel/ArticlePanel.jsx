@@ -5,14 +5,14 @@ import './ArticlePanel.css';
 export function ArticlePanel({
   title,
   content,
-  imageName,
+  image,
 }) {
   const PREFIX = 'article';
 
   return (
     <div className={PREFIX}>
       <div className='article__img'>
-        <img src={ArtileImage} alt='article image' />
+        <img src={image} alt='Picture of article - Showing appearance of British-shorthair cats' />
       </div>
       <div className='article__words'>
         <h2 className='article__title'>{title}</h2>

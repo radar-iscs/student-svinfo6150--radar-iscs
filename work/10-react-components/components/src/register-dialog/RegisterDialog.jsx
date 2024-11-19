@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Button from '../button';
+
 import {
   BUTTON_TYPE,
   SUBMIT_TYPE,
@@ -10,6 +11,7 @@ import './RegisterDialog.css';
 
 export function RegisterDialog({ dialogRef }) {
   const PREFIX = 'register-dialog';
+  const inputRef = useRef();
   const [tips, setTips] = useState('');
 
   const onClickSubmitBtn = e => {
@@ -19,30 +21,49 @@ export function RegisterDialog({ dialogRef }) {
 
   const onClickCloseBtn = () => {
     dialogRef.current.close();
+
+    // reset dialog
+    setTips('');
+    inputRef.current.value = '';
   };
 
   return (
     <dialog className={PREFIX} ref={dialogRef}>
-      <div className='subscribe-box'>
-        <h3>Subscribe to the Latest Mews!</h3>
-        <form className='form__settings' action='/subscribe' method='POST' id='subscribe-form' />
-        <label className='description required' htmlFor='email'>Email</label>
-        <input className='operation email' type='text' name='email' id='email' placeholder='required' />
+      <h3>Submit and Join Us Now!</h3>
+      <div className={`${PREFIX}__box`}>
+        <form
+          className={`${PREFIX}__form`}
+          action='/subscribe'
+          method='POST'
+          id='subscribe-form'
+        >
+          <label className={`${PREFIX}__description`} htmlFor='email'>Email</label>
+          <input
+            ref={inputRef}
+            className={`${PREFIX}__operation`}
+            type='text'
+            name='email'
+            id='email'
+            placeholder='123@abc.com'
+          />
+        </form>
       </div>
-      {tips && <span className='tips'>{tips}</span>}
-      <Button
-        content='Submit'
-        type={SUBMIT_TYPE}
-        visual={LINK_VISUAL}
-        form='subscribe-form'
-        onClick={onClickSubmitBtn}
-      />
-      <Button
-        content='Close'
-        type={BUTTON_TYPE}
-        visual={BUTTON_VISUAL}
-        onClick={onClickCloseBtn}
-      />
+      <div className={`${PREFIX}__btns`}>
+        <Button
+          content='Submit'
+          type={SUBMIT_TYPE}
+          visual={LINK_VISUAL}
+          form='subscribe-form'
+          onClick={onClickSubmitBtn}
+        />
+        <Button
+          content='Close'
+          type={BUTTON_TYPE}
+          visual={BUTTON_VISUAL}
+          onClick={onClickCloseBtn}
+        />
+      </div>
+      {tips && <span>{tips}</span>}
     </dialog>
   );
 }

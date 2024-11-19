@@ -14,6 +14,7 @@ export function HomePage() {
           key={article.title}
           title={article.title}
           content={article.content}
+          image={article.image}
         />
       )}
     </div>

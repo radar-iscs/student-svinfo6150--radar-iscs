@@ -1,21 +1,7 @@
-
-.collection {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 0.5rem;
-
-  padding: 2rem 1rem;
-}
-
-.collection__title {
-  grid-column: span 12;
-
-  justify-self: center;
-}
-
-.collection__card {
+.cat-card {
   display: flex;
   flex-direction: column;
+  grid-column: span 4;
   padding: 5px 10px 10px 10px;
 
   border: 1px solid #eee;
@@ -28,25 +14,21 @@
   grid-column: span 4;
 }
 
-.historical .collection__card {
-  grid-column: span 3;
-}
-
-.collection__card .collection__card-img {
+.cat-card__img {
   height: 200px;
 }
 
-.collection__card h3 {
+.cat-card h3 {
   margin: 10px 0 0 0;
 
   text-align: center;
 }
 
-.collection__card p {
+.cat-card p {
   flex: 1;
 }
   
-.collection__card .collection__card-btn {
+.cat-card__btn {
   width: 70%;
   height: 30px;
   margin: auto;

@@ -1,9 +1,9 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import {
   BUTTON_TYPE,
   SUBMIT_TYPE,
   BUTTON_VISUAL,
-} from '../data/const'
+} from '../data/const';
 import './Button.css';
 
 export function Button({
@@ -13,7 +13,7 @@ export function Button({
   onClick,
   form,
 }) {
-  const PREFIX = "custom-button";
+  const PREFIX = 'custom-button';
 
   return (
     <button

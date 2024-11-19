@@ -1,15 +1,17 @@
 import React from 'react';
-import CardImage from '../assets/type_siamese.jpg';
-import { PATH_ABOUT } from '../data/const';
+import Button from '../button';
+
+import { LINK_VISUAL, PATH_ABOUT } from '../data/const';
 import './CatCard.css';
 
 export function CatCard({
   title,
+  image,
   content,
   link,
   setPage,
 }) {
-  const PREFIX = 'card';
+  const PREFIX = 'cat-card';
 
   const onClickBtn = () => {
     if (link) {
@@ -21,12 +23,19 @@ export function CatCard({
 
   return (
     <div className={PREFIX}>
-      <div className="collection__card">
-        <img className="collection__card-img" src={CardImage} alt='card image' />
-        <h3>{title}</h3>
-        <p>{content}</p>
-        <button className="collection__card-btn" onClick={onClickBtn}>{link ? 'Read More' : 'About Us'}</button>
-      </div>
+      <img
+        className={`${PREFIX}__img`}
+        src={image}
+        alt='Picture of Card - Showing appearance of Siamese cats'
+      />
+      <h3>{title}</h3>
+      <p>{content}</p>
+      <Button
+        className={`${PREFIX}__btn`}
+        content={link ? 'Read More' : 'About Us'}
+        onClick={onClickBtn}
+        {...(link ? { visual: LINK_VISUAL } : {})}
+      />
     </div>
   );
 }

@@ -5,7 +5,7 @@ import './GlobalNav.css';
 export function GlobalNav({
   navToHash,
 }) {
-  const PREFIX = "global-nav";
+  const PREFIX = 'global-nav';
 
   const list = MENU.map(item => {
     return (

@@ -1,0 +1,52 @@
+.register-dialog {
+  flex-direction: column;
+
+  align-items: center;
+  border-radius: 15px;
+}
+
+.register-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.register-dialog[open] {
+  display: flex;
+
+  animation: open 0.5s ease-out;
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.register-dialog__box {
+  padding: 0 10px;
+}
+
+.register-dialog__operation {
+  margin-left: 10px;
+  padding: 0 10px;
+
+  font-size: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.register-dialog__operation:focus {
+  outline-width: 0;
+}
+
+.register-dialog__btns {
+  display: flex;
+  gap: 20px;
+
+  margin: 1.2rem 0 0.5rem 0;
+  justify-content: space-between;
+}
