@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  justify-content: center;
+}
+
+.container h1 {
+  flex-basis: 100%;
+
+  text-align: center;
+}

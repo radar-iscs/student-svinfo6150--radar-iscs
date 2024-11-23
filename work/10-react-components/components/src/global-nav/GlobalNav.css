@@ -1,0 +1,12 @@
+.global-nav__list {
+  display: flex;
+  margin: 10px 0;
+  
+  list-style-type: none;
+}
+
+.global-nav__item {
+  flex: 1;
+
+  text-align: center;
+}

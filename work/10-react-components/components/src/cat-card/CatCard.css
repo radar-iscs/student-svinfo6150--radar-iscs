@@ -1,0 +1,41 @@
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 4;
+  padding: 5px 10px 10px 10px;
+
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #F5F5F7;
+}
+
+.news .collection__card {
+  grid-column: span 4;
+}
+
+.cat-card__img {
+  height: 200px;
+}
+
+.cat-card h3 {
+  margin: 10px 0 0 0;
+
+  text-align: center;
+}
+
+.cat-card p {
+  flex: 1;
+}
+  
+.cat-card__btn {
+  width: 70%;
+  height: 30px;
+  margin: auto;
+
+  justify-items: center;
+  border-radius: 10px;
+  border: 0;
+
+  background-color: #e6e6e6;
+}

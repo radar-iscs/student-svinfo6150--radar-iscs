@@ -1,0 +1,21 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+}
+
+.about-page h2 {
+  text-align: center;
+}
+
+.about-page p::first-letter {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: brown;
+}
+
+.about-page .custom-button {
+  margin: 20px auto 0 auto;
+  padding: 20px;
+}
