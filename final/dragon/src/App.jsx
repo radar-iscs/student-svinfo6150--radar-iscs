@@ -38,10 +38,13 @@ function App() {
   
   return (
     <div className='app'>
+      <a className="skiplink" href="#main">Skip to content</a>
       <Header currentPage={page} navToHash={navToHash} />
-      {page === PATH_HOME && <HomePage />}
-      {page === PATH_SHOP && <ShopPage setPage={setPage} addOrder={addOrder} />}
-      {page === PATH_ORDERS && <OrdersPage orders={orders} setPage={setPage} />}
+      <main id='main'>
+        {page === PATH_HOME && <HomePage />}
+        {page === PATH_SHOP && <ShopPage setPage={setPage} addOrder={addOrder} />}
+        {page === PATH_ORDERS && <OrdersPage orders={orders} setPage={setPage} />}
+      </main>
       <Footer />
     </div>
   );

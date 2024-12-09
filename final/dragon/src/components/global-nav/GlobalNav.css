@@ -4,6 +4,7 @@
   padding: 0;
   
   list-style-type: none;
+  z-index: 100;
 }
 
 .global-nav__item {
@@ -25,4 +26,26 @@
 .global-nav__link {
   text-decoration: none;
   color: white; 
+}
+
+/* mobile layout */
+@media (max-width: 36rem) {
+  .global-nav__list {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: auto;
+
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .global-nav__list.show {
+    display: flex;
+  }
+
+  .global-nav__list li {
+    height: 60px;
+  }
 }

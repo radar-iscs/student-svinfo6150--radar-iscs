@@ -6,6 +6,7 @@ import {
 import './Button.css';
 
 export function Button({
+  ariaLabel,
   type = BUTTON_TYPE,
   visual = BUTTON_VISUAL,
   className,
@@ -17,6 +18,7 @@ export function Button({
 
   return (
     <button
+      aria-label={ariaLabel}
       className={`${PREFIX} ${visual} ${className}`}
       onClick={onClick}
       {...(type === SUBMIT_TYPE ? { type: 'submit' } : {})}

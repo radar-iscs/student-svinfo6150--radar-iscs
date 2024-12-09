@@ -6,13 +6,13 @@ header {
 
   backdrop-filter: blur(20px);
   background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .header__logo {
   display: flex;
 
   justify-self: center;
-  min-width: var(--min-screen-width);
 }
 
 .header__logo img {
@@ -21,14 +21,28 @@ header {
 }
 
 .header__logo h1 {
+  width: 100%;
   margin-left: 40px;
 
   color: white;
 }
 
-.nav {
-  display: flex;
-  margin-left: auto;
+.header__dropdown-btn {
+  display: none;
 
-  min-width: var(--min-screen-width);
+  font-size: 14px;
+  line-height: 18px;
+  background-color: unset;
+}
+
+.header__dropdown-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+/* mobile layout */
+@media (max-width: 36rem) {
+  .header__dropdown-btn {
+    display: block;
+  }
 }

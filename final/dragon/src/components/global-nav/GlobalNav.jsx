@@ -2,8 +2,11 @@ import { MENU } from '../../data/const';
 import './GlobalNav.css';
 
 export function GlobalNav({
+  navRef,
   currentPage,
   navToHash,
+  navVisibleInMobile,
+  setNavVisibleInMobile,
 }) {
   const PREFIX = 'global-nav';
 
@@ -12,7 +15,10 @@ export function GlobalNav({
       <li
         key={item.name}
         className={`${PREFIX}__item ${currentPage === item.path ? 'selected' : ''}`}
-        onClick={() => navToHash(item.path)}
+        onClick={() => {
+          setNavVisibleInMobile(false);
+          navToHash(item.path);
+        }}
       >
         <a
           className={`${PREFIX}__link`}
@@ -26,8 +32,8 @@ export function GlobalNav({
   });
 
   return (
-    <nav className={PREFIX}>
-      <ul className={`${PREFIX}__list`}>{list}</ul>
+    <nav ref={navRef} className={PREFIX}>
+      <ul className={`${PREFIX}__list ${navVisibleInMobile ? 'show' : ''}`}>{list}</ul>
     </nav>
   );
 }

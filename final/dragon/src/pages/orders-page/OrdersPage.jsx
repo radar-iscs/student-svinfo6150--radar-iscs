@@ -30,6 +30,7 @@ export function OrdersPage({ orders, setPage }) {
             <p>
               Go to 
               <Button
+                ariaLabel='Go to Shop Page'
                 content='Shop'
                 visual={LINK_VISUAL}
                 onClick={() => setPage(PATH_SHOP)}

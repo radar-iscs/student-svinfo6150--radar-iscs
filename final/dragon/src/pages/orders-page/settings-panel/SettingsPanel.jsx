@@ -13,11 +13,11 @@ export function SettingsPanel({
 }) {
   const PREFIX = 'settings-panel';
 
-  const [showSortOptions, setShowSortOptions] = useState(false);
-  const [showFilterOptions, setShowFilterOptions] = useState(false);
+  const [sortOptionsVisible, setSortOptionsVisible] = useState(false);
+  const [filterOptionsVisible, setFilterOptionsVisible] = useState(false);
 
-  const sortBtnRef = useRef();
-  const filterBtnRef = useRef();
+  const sortRef = useRef();
+  const filterRef = useRef();
 
   useEffect(() => {
     document.addEventListener('mousedown', onClickOutside);
@@ -26,28 +26,30 @@ export function SettingsPanel({
     };
   }, []);
   
-  const onClickOutside = (e) => {
-    if (sortBtnRef.current && !sortBtnRef.current.contains(e.target)) {
-      setShowSortOptions(false);
+  const onClickOutside = e => {
+    console.log(sortRef.current.contains(e.target))
+    if (sortRef.current && !sortRef.current.contains(e.target)) {
+      console.log('jowihfiowehfoiwhefow')
+      setSortOptionsVisible(false);
     }
-    if (filterBtnRef.current && !filterBtnRef.current.contains(e.target)) {
-      setShowFilterOptions(false);
+    if (filterRef.current && !filterRef.current.contains(e.target)) {
+      setFilterOptionsVisible(false);
     }
   };
 
   const onClickSortBtn = () => {
-    setShowSortOptions(prev => !prev);
-    setShowFilterOptions(false);
+    setSortOptionsVisible(prev => !prev);
+    setFilterOptionsVisible(false);
   };
 
   const onClickSortOption = (option) => {
     setSelectedSort(option);
-    setShowSortOptions(false);
+    setSortOptionsVisible(false);
   };
 
   const onClickFilterBtn = () => {
-    setShowFilterOptions(prev => !prev);
-    setShowSortOptions(false);
+    setFilterOptionsVisible(prev => !prev);
+    setSortOptionsVisible(false);
   };
 
   const onClickFilterOption = (e, option) => {
@@ -60,9 +62,9 @@ export function SettingsPanel({
 
   return (
     <div className={PREFIX}>
-      <div ref={sortBtnRef} className={`${PREFIX}__wrapper`}>
+      <div ref={sortRef} className={`${PREFIX}__wrapper`}>
         <button onClick={onClickSortBtn}>Sort</button>
-        {showSortOptions && (
+        {sortOptionsVisible && (
           <div className={`${PREFIX}__dropdown`}>
             <div
               className={`${PREFIX}__dropdown-item`}
@@ -80,9 +82,9 @@ export function SettingsPanel({
         )}
       </div>
 
-      <div ref={filterBtnRef} className={`${PREFIX}__wrapper`}>
+      <div ref={filterRef} className={`${PREFIX}__wrapper`}>
         <button onClick={onClickFilterBtn}>Filter</button>
-        {showFilterOptions && (
+        {filterOptionsVisible && (
           <div className={`${PREFIX}__dropdown filter`}>
             {Object.keys(SHOP_CARDS).map(merchKey => 
               <label

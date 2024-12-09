@@ -31,6 +31,7 @@ export function ShopCard({
         {contents.map((paragraph, index) => <li key={index}>{paragraph}</li>)}
       </ul>
       <Button
+        ariaLabel='Open Order Form'
         className={`${PREFIX}__btn`}
         content={'Order Now'}
         onClick={onClickBtn}

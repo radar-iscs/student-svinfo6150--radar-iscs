@@ -54,6 +54,9 @@ From unsplash.com:
    - License: https://unsplash.com/license
    - Attribution: Photo by Dinu J Nair on Unsplash
 
+10. icon_menu.svg
+   - Source: http://fonts.google.com/icons 
+   - License: https://github.com/google/material-design-icons/blob/master/LICENSE
 
    
 

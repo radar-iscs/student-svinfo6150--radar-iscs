@@ -88,6 +88,7 @@ export function OrderDialog({ dialogRef, merchKey, setPage, addOrder }) {
           <p>
             See your orders
             <Button
+              ariaLabel='Go to Orders Page'
               content='HERE'
               visual={LINK_VISUAL}
               onClick={onClickToastLink}
@@ -170,6 +171,7 @@ export function OrderDialog({ dialogRef, merchKey, setPage, addOrder }) {
         </form>
       <div className={`${PREFIX}__btns`}>
         <Button
+          ariaLabel='Submit Order Form'
           content='Submit'
           type={SUBMIT_TYPE}
           visual={LINK_VISUAL}
@@ -177,6 +179,7 @@ export function OrderDialog({ dialogRef, merchKey, setPage, addOrder }) {
           onClick={onClickSubmitBtn}
         />
         <Button
+          ariaLabel='Close Order Form'
           content='Close'
           type={BUTTON_TYPE}
           visual={BUTTON_VISUAL}
