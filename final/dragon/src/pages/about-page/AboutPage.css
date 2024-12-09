@@ -1,0 +1,28 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  
+  padding: 10px;
+}
+
+.about-page__title {
+  align-self: center;
+}
+
+.about-page img {
+  object-fit: contain;
+  
+  max-height: 400px;
+  margin-top: 10px;
+}
+
+.about-page button {
+  padding: 0;
+  font-size: 1rem;
+}
+
+p::first-letter {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: brown;
+}

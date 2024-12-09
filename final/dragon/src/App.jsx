@@ -15,6 +15,7 @@ import HomePage from './pages/home-page';
 import LoongPage from './pages/loong-page';
 import ShopPage from './pages/shop-page';
 import OrdersPage from './pages/orders-page';
+import AboutPage from './pages/about-page';
 import Footer from './components/footer';
 
 import './App.css'
@@ -46,6 +47,7 @@ function App() {
         {page === PATH_LOONG && <LoongPage />}
         {page === PATH_SHOP && <ShopPage setPage={setPage} addOrder={addOrder} />}
         {page === PATH_ORDERS && <OrdersPage orders={orders} setPage={setPage} />}
+        {page === PATH_ABOUT && <AboutPage />}
       </main>
       <Footer />
     </div>

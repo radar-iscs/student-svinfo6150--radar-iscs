@@ -30,7 +30,6 @@ export function Header({
   }
 
   const onClickNavBtn = () => {
-    console.log(navVisibleInMobile)
     setNavVisibleInMobile(prev => !prev);
   }
 

@@ -32,9 +32,7 @@ export function SettingsPanel({
   }, []);
   
   const onClickOutside = e => {
-    console.log(sortRef.current.contains(e.target))
     if (sortRef.current && !sortRef.current.contains(e.target)) {
-      console.log('jowihfiowehfoiwhefow')
       setSortOptionsVisible(false);
     }
     if (filterRef.current && !filterRef.current.contains(e.target)) {

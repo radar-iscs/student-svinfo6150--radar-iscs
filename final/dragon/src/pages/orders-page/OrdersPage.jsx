@@ -12,6 +12,10 @@ export function OrdersPage({ orders, setPage }) {
   const [selectedSort, setSelectedSort] = useState(SORT_TYPE_NEWEST);
   const [selectedFilters, setSelectedFilters] = useState(Object.keys(SHOP_CARDS));
 
+  if (!orders.length) {
+    console.log(orders.length)
+  }
+
   return (
     <div className={PREFIX}>
       <h2 className={`${PREFIX}__title`}>The Orders I Made</h2>
@@ -24,7 +28,7 @@ export function OrdersPage({ orders, setPage }) {
           setSelectedFilters={setSelectedFilters}
         />
         {/* list items */}
-        {!orders.lengh && 
+        {!orders.length && 
           <div className={`${PREFIX}__item empty`}>
             <p>There are no orders now.</p>
             <p>
@@ -53,7 +57,7 @@ export function OrdersPage({ orders, setPage }) {
                 src={merch.image}
                 alt='Picture of Card - Showing appearance of different dragon merch'
               />
-              <div className={`${PREFIX}__contents`}>
+              <div className={`${PREFIX}__paragraphs`}>
                 <p>{`Merch Name: ${merch.title}`}</p>
                 <p>{`Email: ${order.email}`}</p>
                 <p>{`Shipping Address: ${order.shippingAddress}`}</p>

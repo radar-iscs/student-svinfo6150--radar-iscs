@@ -24,6 +24,7 @@ export function OrderDialog({ dialogRef, merchKey, setPage, addOrder }) {
   const [billingAddress, setBillingAddress] = useState('');
   const [isSameAddress, setIsSameAddress] = useState(false);
 
+  // email
   const handleEmailChange = e => {
     setEmail(e.target.value);
   };
@@ -42,6 +43,7 @@ export function OrderDialog({ dialogRef, merchKey, setPage, addOrder }) {
     return true;
   };
 
+  // shipping adress
   const handleShippingAddressChange = e => {
     setShippingAddress(e.target.value);
   };
@@ -56,10 +58,12 @@ export function OrderDialog({ dialogRef, merchKey, setPage, addOrder }) {
     return true;
   };
 
+  // billing adress
   const handleBillingAddressChange = e => {
     setBillingAddress(e.target.value);
   };
 
+  // event handlers
   const handleCheckChange = e => {
     setIsSameAddress(e.target.checked);
   };
@@ -86,10 +90,10 @@ export function OrderDialog({ dialogRef, merchKey, setPage, addOrder }) {
         <>
           <p>Ordered Successfully!</p>
           <p>
-            See your orders
+            
             <Button
               ariaLabel='Go to Orders Page'
-              content='HERE'
+              content='View your orders'
               visual={LINK_VISUAL}
               onClick={onClickToastLink}
             />
@@ -113,6 +117,7 @@ export function OrderDialog({ dialogRef, merchKey, setPage, addOrder }) {
     setShippingAddressError('');
   };
 
+  // getter
   const getBillingAddress = () => {
     return isSameAddress ? shippingAddress : billingAddress;
   }

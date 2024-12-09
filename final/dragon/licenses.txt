@@ -4,27 +4,12 @@ From unsplash.com:
    - License: https://unsplash.com/license
    - Attribution: Photo by Mathew Schwartz on Unsplash
 
-1. loong_whole.jpg
-   - Source: https://unsplash.com/photos/gold-dragon-statue--7BMThljOPg
-   - License: https://unsplash.com/license
-   - Attribution: Photo by Martin Woortman on Unsplash
-
-1. loong_origin.jpg
-   - Source: https://unsplash.com/photos/a-colorful-art-piece--AAgQdiX9GI
-   - License: https://unsplash.com/license
-   - Attribution: Photo by Thomas Kinto on Unsplash
-
-1. loong_difference.jpg
-   - Source: https://unsplash.com/photos/a-dragon-statue-on-top-of-a-building-oxXdFZpFSW4
-   - License: https://unsplash.com/license
-   - Attribution: Photo by 順平 黃 on Unsplash
-
-1. article_roof.jpg
+2. article_roof.jpg
    - Source: https://unsplash.com/photos/brown-and-gray-concrete-building-under-blue-sky-during-daytime-WsBtj3RL0fs
    - License: https://unsplash.com/license
    - Attribution: Photo by Dan Cutler on Unsplash
 
-9. article_soldier.jpg
+3. article_soldier.jpg
    - Source: https://unsplash.com/photos/a-close-up-of-a-figurine-of-a-creature-GXKwE18ze2E
    - License: https://unsplash.com/license
    - Attribution: Photo by winter sun on Unsplash
@@ -34,65 +19,55 @@ From unsplash.com:
    - License: https://unsplash.com/license
    - Attribution: Photo by Carlos Cram on Unsplash
 
-
-
-
-
-
-2. dragon-on-roof2.jpg
-   - Source: https://unsplash.com/photos/a-dragon-statue-on-top-of-a-building-eFyVtxyQA34
+5. loong_whole.jpg
+   - Source: https://unsplash.com/photos/gold-dragon-statue--7BMThljOPg
    - License: https://unsplash.com/license
-   - Attribution: Photo by Thamara Maura on Unsplash
+   - Attribution: Photo by Martin Woortman on Unsplash
 
-3. dragon-with-three-heads.jpg
-   - Source: https://unsplash.com/photos/gray-concrete-statue-under-blue-sky-during-daytime-lDZNNvLU6pY
+6. loong_origin.jpg
+   - Source: https://unsplash.com/photos/a-colorful-art-piece--AAgQdiX9GI
    - License: https://unsplash.com/license
-   - Attribution: Photo by aisvri on Unsplash
+   - Attribution: Photo by Thomas Kinto on Unsplash
 
+7. loong_difference.jpg
+   - Source: https://unsplash.com/photos/a-dragon-statue-on-top-of-a-building-oxXdFZpFSW4
+   - License: https://unsplash.com/license
+   - Attribution: Photo by 順平 黃 on Unsplash
 
-7. shop_dragon-model.jpg
+8. shop_dragon-model.jpg
    - Source: https://unsplash.com/photos/a-close-up-of-a-toy-dragon-on-a-table-afMlIdI0xBQ
    - License: https://unsplash.com/license
    - Attribution: Photo by Dinu J Nair on Unsplash
 
-8. shop_dragon-model2.jpg
+9. shop_dragon-model2.jpg
    - Source: https://unsplash.com/photos/a-red-dragon-figurine-on-a-white-background-TRzNzpYTxWY
    - License: https://unsplash.com/license
    - Attribution: Photo by Matthew Ball on Unsplash
 
-6. shop_dragon-cloth.jpg
+10. shop_dragon-cloth.jpg
    - Source: https://unsplash.com/photos/multicolored-dragon-wallpaper-HKxqlQiFu-A
    - License: https://unsplash.com/license
    - Attribution: Photo by 嘲 风 on Unsplash
 
-5. shop_stone-dragon.jpg
+11. shop_stone-dragon.jpg
    - Source: https://unsplash.com/photos/a-small-toy-tiger-sitting-on-a-blue-surface-fsNM8TZsaIw
    - License: https://unsplash.com/license
    - Attribution: Photo by Alyzah K on Unsplash
 
-
-7. shop_dragon-model.jpg
-   - Source: https://unsplash.com/photos/a-close-up-of-a-toy-dragon-on-a-table-afMlIdI0xBQ
-   - License: https://unsplash.com/license
-   - Attribution: Photo by Dinu J Nair on Unsplash
-
-10. icon_menu.svg
+12. icon_menu.svg
    - Source: http://fonts.google.com/icons 
    - License: https://github.com/google/material-design-icons/blob/master/LICENSE
 
-10. icon_sort.svg
+13. icon_sort.svg
    - Source: http://fonts.google.com/icons 
    - License: https://github.com/google/material-design-icons/blob/master/LICENSE
 
-10. icon_filter.svg
+14. icon_filter.svg
    - Source: http://fonts.google.com/icons 
    - License: https://github.com/google/material-design-icons/blob/master/LICENSE
-
-   
-
 
 From personally owned:
-1. about_apollo.jpg
+1. about.png
    - Source: Myself
    - License: Public Domain (CC0)
-   
+   - Owner: Da Lei
