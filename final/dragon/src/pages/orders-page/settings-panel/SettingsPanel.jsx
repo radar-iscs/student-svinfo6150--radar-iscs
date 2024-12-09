@@ -20,13 +20,13 @@ export function SettingsPanel({
   const filterBtnRef = useRef();
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleOutsideClick);
+    document.addEventListener('mousedown', onClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleOutsideClick);
+      document.removeEventListener('mousedown', onClickOutside);
     };
   }, []);
   
-  const handleOutsideClick = (e) => {
+  const onClickOutside = (e) => {
     if (sortBtnRef.current && !sortBtnRef.current.contains(e.target)) {
       setShowSortOptions(false);
     }
@@ -35,22 +35,22 @@ export function SettingsPanel({
     }
   };
 
-  const handleSortBtnClick = () => {
+  const onClickSortBtn = () => {
     setShowSortOptions(prev => !prev);
     setShowFilterOptions(false);
   };
 
-  const handleSortOptionClick = (option) => {
+  const onClickSortOption = (option) => {
     setSelectedSort(option);
     setShowSortOptions(false);
   };
 
-  const handleFilterBtnClick = () => {
+  const onClickFilterBtn = () => {
     setShowFilterOptions(prev => !prev);
     setShowSortOptions(false);
   };
 
-  const handleFilterOptionChange = (e, option) => {
+  const onClickFilterOption = (e, option) => {
     setSelectedFilters(prev =>
         e.target.checked
           ? [...prev, option]
@@ -61,18 +61,18 @@ export function SettingsPanel({
   return (
     <div className={PREFIX}>
       <div ref={sortBtnRef} className={`${PREFIX}__wrapper`}>
-        <button onClick={handleSortBtnClick}>Sort</button>
+        <button onClick={onClickSortBtn}>Sort</button>
         {showSortOptions && (
           <div className={`${PREFIX}__dropdown`}>
             <div
               className={`${PREFIX}__dropdown-item`}
-              onClick={() => handleSortOptionClick(SORT_TYPE_NEWEST)}
+              onClick={() => onClickSortOption(SORT_TYPE_NEWEST)}
             >
               Newest Order First
             </div>
             <div
               className={`${PREFIX}__dropdown-item`}
-              onClick={() => handleSortOptionClick(SORT_TYPE_OLDEST)}
+              onClick={() => onClickSortOption(SORT_TYPE_OLDEST)}
             >
               Oldest Order First
             </div>
@@ -81,7 +81,7 @@ export function SettingsPanel({
       </div>
 
       <div ref={filterBtnRef} className={`${PREFIX}__wrapper`}>
-        <button onClick={handleFilterBtnClick}>Filter</button>
+        <button onClick={onClickFilterBtn}>Filter</button>
         {showFilterOptions && (
           <div className={`${PREFIX}__dropdown filter`}>
             {Object.keys(SHOP_CARDS).map(merchKey => 
@@ -92,7 +92,7 @@ export function SettingsPanel({
                 <input
                   type="checkbox"
                   checked={selectedFilters.includes(merchKey)}
-                  onChange={e => handleFilterOptionChange(e, merchKey)}
+                  onChange={e => onClickFilterOption(e, merchKey)}
                 />
                 {SHOP_CARDS[merchKey].title}
               </label>
