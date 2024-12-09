@@ -1,9 +1,14 @@
 import { useState, useRef, useEffect } from 'react';
+import Button from '../../../components/button'; 
+
 import {
   SHOP_CARDS,
   SORT_TYPE_NEWEST,
   SORT_TYPE_OLDEST,
 } from '../../../data/merch';
+
+import SortIcon from '../../../assets/icon_sort.svg';
+import FilterIcon from '../../../assets/icon_filter.svg';
 import './SettingsPanel.css';
 
 export function SettingsPanel({
@@ -63,9 +68,14 @@ export function SettingsPanel({
   return (
     <div className={PREFIX}>
       <div ref={sortRef} className={`${PREFIX}__wrapper`}>
-        <button onClick={onClickSortBtn}>Sort</button>
+        <Button
+          ariaLabel='Show Sort Options'
+          className={`${PREFIX}__dropdown-btn`}
+          content={<><img src={SortIcon} />Sort</>}
+          onClick={onClickSortBtn}
+        />
         {sortOptionsVisible && (
-          <div className={`${PREFIX}__dropdown`}>
+          <div className={`${PREFIX}__dropdown-list`}>
             <div
               className={`${PREFIX}__dropdown-item`}
               onClick={() => onClickSortOption(SORT_TYPE_NEWEST)}
@@ -83,9 +93,14 @@ export function SettingsPanel({
       </div>
 
       <div ref={filterRef} className={`${PREFIX}__wrapper`}>
-        <button onClick={onClickFilterBtn}>Filter</button>
+        <Button
+          ariaLabel='Show Filter Options'
+          className={`${PREFIX}__dropdown-btn`}
+          content={<><img src={FilterIcon} />Filter</>}
+          onClick={onClickFilterBtn}
+        />
         {filterOptionsVisible && (
-          <div className={`${PREFIX}__dropdown filter`}>
+          <div className={`${PREFIX}__dropdown-list filter`}>
             {Object.keys(SHOP_CARDS).map(merchKey => 
               <label
                 key={merchKey}

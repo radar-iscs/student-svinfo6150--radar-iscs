@@ -19,7 +19,7 @@ export function Button({
   return (
     <button
       aria-label={ariaLabel}
-      className={`${PREFIX} ${visual} ${className}`}
+      className={`${PREFIX} ${visual}${className ? ` ${className}` : ''}`}
       onClick={onClick}
       {...(type === SUBMIT_TYPE ? { type: 'submit' } : {})}
       {...(form && { form })}

@@ -11,7 +11,7 @@
 .shop-page__cards {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 0.5rem;
+  gap: 15px;
 
-  padding: 2rem 1rem;
+  padding: 20px 15px;
 }

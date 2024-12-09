@@ -12,6 +12,7 @@ import {
 // components
 import Header from './components/header';
 import HomePage from './pages/home-page';
+import LoongPage from './pages/loong-page';
 import ShopPage from './pages/shop-page';
 import OrdersPage from './pages/orders-page';
 import Footer from './components/footer';
@@ -42,6 +43,7 @@ function App() {
       <Header currentPage={page} navToHash={navToHash} />
       <main id='main'>
         {page === PATH_HOME && <HomePage />}
+        {page === PATH_LOONG && <LoongPage />}
         {page === PATH_SHOP && <ShopPage setPage={setPage} addOrder={addOrder} />}
         {page === PATH_ORDERS && <OrdersPage orders={orders} setPage={setPage} />}
       </main>

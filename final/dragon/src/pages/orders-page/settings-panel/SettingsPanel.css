@@ -9,7 +9,19 @@
   position: relative;
 }
 
-.settings-panel__dropdown {
+.settings-panel__dropdown-btn {
+  display: flex;
+
+  font-size: 1rem !important;
+}
+
+.settings-panel__dropdown-btn img {
+  width: 18px;
+  height: 18px;
+  margin-right: 2px;
+}
+
+.settings-panel__dropdown-list {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -23,12 +35,12 @@
   background: white;
 }
 
-.settings-panel__dropdown.filter {
-    width: 200px;
+.settings-panel__dropdown-list.filter {
+  width: 200px;
 }
 
 /* draw an arrow on the top right */
-.settings-panel__dropdown::before {
+.settings-panel__dropdown-list::before {
   content: "";
   position: absolute;
   top: -7px;

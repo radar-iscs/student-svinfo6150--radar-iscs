@@ -4,6 +4,24 @@ From unsplash.com:
    - License: https://unsplash.com/license
    - Attribution: Photo by Mathew Schwartz on Unsplash
 
+1. loong_whole.jpg
+   - Source: https://unsplash.com/photos/gold-dragon-statue--7BMThljOPg
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Martin Woortman on Unsplash
+
+1. loong_origin.jpg
+   - Source: https://unsplash.com/photos/a-colorful-art-piece--AAgQdiX9GI
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Thomas Kinto on Unsplash
+
+1. loong_difference.jpg
+   - Source: https://unsplash.com/photos/a-dragon-statue-on-top-of-a-building-oxXdFZpFSW4
+   - License: https://unsplash.com/license
+   - Attribution: Photo by 順平 黃 on Unsplash
+
+   
+   
+
 1. dragon-on-roof.jpg
    - Source: https://unsplash.com/photos/brown-and-gray-concrete-building-under-blue-sky-during-daytime-WsBtj3RL0fs
    - License: https://unsplash.com/license
@@ -55,6 +73,14 @@ From unsplash.com:
    - Attribution: Photo by Dinu J Nair on Unsplash
 
 10. icon_menu.svg
+   - Source: http://fonts.google.com/icons 
+   - License: https://github.com/google/material-design-icons/blob/master/LICENSE
+
+10. icon_sort.svg
+   - Source: http://fonts.google.com/icons 
+   - License: https://github.com/google/material-design-icons/blob/master/LICENSE
+
+10. icon_filter.svg
    - Source: http://fonts.google.com/icons 
    - License: https://github.com/google/material-design-icons/blob/master/LICENSE
 
