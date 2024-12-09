@@ -10,7 +10,7 @@ import {
 } from '../../data/const';
 import './OrderDialog.css';
 
-export function OrderDialog({ dialogRef }) {
+export function OrderDialog({ dialogRef, merchKey, addOrder }) {
   const PREFIX = 'order-dialog';
 
   const wrapperRef = useRef();
@@ -27,26 +27,32 @@ export function OrderDialog({ dialogRef }) {
     setEmail(e.target.value);
   };
 
-  const handleEmailValidation = () => {
+  const validateEmail = () => {
     if (!email) {
       setEmailError('Email can not be empty');
-    } else if (!email.includes('@')) {
-      setEmailError('Email must contain "@"');
-    } else {
-      setEmailError('');
+      return false;
     }
+    if (!email.includes('@')) {
+      setEmailError('Email must contain "@"');
+      return false;
+    }
+
+    setEmailError('');
+    return true;
   };
 
   const handleShippingAddressChange = e => {
     setShippingAddress(e.target.value);
   };
 
-  const handleShippingAddressValidation = () => {
+  const validateShippingAddress = () => {
     if (!shippingAddress) {
       setShippingAddressError('Address can not be empty');
-    } else {
-      setShippingAddressError('');
+      return false;
     }
+
+    setShippingAddressError('');
+    return true;
   };
 
   const handleBillingAddressChange = e => {
@@ -68,8 +74,11 @@ export function OrderDialog({ dialogRef }) {
   const onClickSubmitBtn = e => {
     e.preventDefault(); // to avoid form action (sending request)
 
-    closeDialog();
-    showToast('done!');
+    if (validateEmail() && validateShippingAddress()) {
+      addOrder(merchKey, email, shippingAddress, getBillingAddress(), Date.now());
+      closeDialog();
+      showToast('done!');
+    }
   };
 
   const onClickCloseBtn = () => {
@@ -111,11 +120,11 @@ export function OrderDialog({ dialogRef }) {
             value={email}
             placeholder='123@abc.com'
             onChange={handleEmailChange}
-            onBlur={handleEmailValidation}
+            onBlur={validateEmail}
           />
           {emailError && <span className={`${PREFIX}__error email`}>{emailError}</span>}
           {/* shpping address */}
-          <label className={`${PREFIX}__description required`} htmlFor='address'>Address</label>
+          <label className={`${PREFIX}__description required`} htmlFor='address'>Shipping Address</label>
           <input
             className={`${PREFIX}__operation address`}
             type='text'
@@ -123,7 +132,7 @@ export function OrderDialog({ dialogRef }) {
             id='address'
             value={shippingAddress}
             onChange={handleShippingAddressChange}
-            onBlur={handleShippingAddressValidation}
+            onBlur={validateShippingAddress}
           />
           {shippingAddressError && <span className={`${PREFIX}__error address`}>{shippingAddressError}</span>}
           {/* billing address */}

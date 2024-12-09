@@ -1,0 +1,48 @@
+.settings-panel {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.settings-panel__wrapper {
+  position: relative;
+}
+
+.settings-panel__dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  top: 35px;
+  right: 0;
+  padding: 6px 0;
+
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background: white;
+}
+
+.settings-panel__dropdown.filter {
+    width: 200px;
+}
+
+/* draw an arrow on the top right */
+.settings-panel__dropdown::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: 10px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #cccccc;;
+}
+
+.settings-panel__dropdown-item {
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.settings-panel__dropdown-item:hover {
+  background: #e0e0e0;
+}

@@ -5,9 +5,11 @@ import OrderDialog from '../order-dialog';
 import './ShopCard.css';
 
 export function ShopCard({
+  merchKey,
   title,
   image,
   contents,
+  addOrder,
 }) {
   const PREFIX = 'shop-card';
   const dialogRef = useRef();
@@ -25,14 +27,14 @@ export function ShopCard({
       />
       <h3>{title}</h3>
       <ul className={`${PREFIX}__contents`}>
-        {contents.map(paragraph => <li>{paragraph}</li>)}
+        {contents.map((paragraph, index) => <li key={index}>{paragraph}</li>)}
       </ul>
       <Button
         className={`${PREFIX}__btn`}
         content={'Order Now'}
         onClick={onClickBtn}
       />
-      <OrderDialog dialogRef={dialogRef} />
+      <OrderDialog dialogRef={dialogRef} merchKey={merchKey} addOrder={addOrder} />
     </div>
   );
 }

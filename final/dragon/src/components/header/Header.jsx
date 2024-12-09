@@ -1,4 +1,3 @@
-import React from 'react';
 import GlobalNav  from '../global-nav';
 
 import Logo from '../../assets/logo.jpg';

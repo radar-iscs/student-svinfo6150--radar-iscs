@@ -1,4 +1,3 @@
-import React from 'react';
 import { MENU } from '../../data/const';
 import './GlobalNav.css';
 
