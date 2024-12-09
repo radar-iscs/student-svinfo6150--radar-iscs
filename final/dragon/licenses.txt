@@ -1,4 +1,9 @@
 From unsplash.com:
+1. logo.jpg
+   - Source: https://unsplash.com/photos/solar-eclipse-7YiZKj9A3DM
+   - License: https://unsplash.com/license
+   - Attribution: Photo by Mathew Schwartz on Unsplash
+
 1. dragon-on-roof.jpg
    - Source: https://unsplash.com/photos/brown-and-gray-concrete-building-under-blue-sky-during-daytime-WsBtj3RL0fs
    - License: https://unsplash.com/license

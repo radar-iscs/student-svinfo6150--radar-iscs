@@ -11,10 +11,15 @@
   flex: 1;
 
   text-align: center;
+  align-content: center;
 }
 
 .global-nav__item.selected {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.global-nav__item:hover {
+  cursor: pointer;
 }
 
 .global-nav__link {

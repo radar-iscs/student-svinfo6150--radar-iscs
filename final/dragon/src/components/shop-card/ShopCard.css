@@ -11,7 +11,7 @@
 }
 
 .shop-card__img {
-  height: 300px;
+  height: 250px;
 }
 
 .shop-card h3 {
@@ -34,4 +34,15 @@
   border: 0;
 
   background-color: #e6e6e6;
+}
+
+/* mobile layout */
+@media (max-width: 36rem) {
+  .shop-card {
+    grid-column: span 12;
+  }
+
+  .shop-card__img {
+    height: 180px;
+  }
 }

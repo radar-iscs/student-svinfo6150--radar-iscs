@@ -10,10 +10,6 @@
   margin: 20px;
 }
 
-.orders-page__item:first-child {
-  border-top: 1px solid #d4d4d4;
-}
-
 .orders-page__item {
   display: flex;
   padding: 10px 20px;
@@ -21,6 +17,15 @@
   border-radius: 10px;
   border-bottom: 1px solid #d4d4d4;
   background-color: #F5F5F7;
+}
+
+.orders-page__item:first-child {
+  border-top: 1px solid #d4d4d4;
+}
+
+.orders-page__item.empty {
+  flex-direction: column;
+  text-align: center;
 }
 
 .orders-page__img {

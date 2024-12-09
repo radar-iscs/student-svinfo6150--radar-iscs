@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import SettingsPanel from './settings-panel';
+import Button from '../../components/button';
+
+import { LINK_VISUAL, PATH_SHOP } from '../../data/const';
 import { SHOP_CARDS, SORT_TYPE_NEWEST } from '../../data/merch';
 import './OrdersPage.css';
 
-export function OrdersPage({ orders }) {
+export function OrdersPage({ orders, setPage }) {
   const PREFIX = 'orders-page';
 
   const [selectedSort, setSelectedSort] = useState(SORT_TYPE_NEWEST);
@@ -21,6 +24,19 @@ export function OrdersPage({ orders }) {
           setSelectedFilters={setSelectedFilters}
         />
         {/* list items */}
+        {!orders.lengh && 
+          <div className={`${PREFIX}__item empty`}>
+            <p>There are no orders now.</p>
+            <p>
+              Go to 
+              <Button
+                content='Shop'
+                visual={LINK_VISUAL}
+                onClick={() => setPage(PATH_SHOP)}
+              />
+            </p>
+          </div>
+        }
         {orders
           .sort((a, b) => (selectedSort === SORT_TYPE_NEWEST
             ? b.time - a.time

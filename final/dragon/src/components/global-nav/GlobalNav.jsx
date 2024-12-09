@@ -9,10 +9,14 @@ export function GlobalNav({
 
   const list = MENU.map(item => {
     return (
-      <li key={item.name} className={`${PREFIX}__item ${currentPage === item.path ? 'selected' : ''}`}>
+      <li
+        key={item.name}
+        className={`${PREFIX}__item ${currentPage === item.path ? 'selected' : ''}`}
+        onClick={() => navToHash(item.path)}
+      >
         <a
           className={`${PREFIX}__link`}
-          onClick={navToHash}
+          onClick={e => e.preventDefault()}
           href={item.path}
         >
           {item.name}
