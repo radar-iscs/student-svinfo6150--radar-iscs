@@ -1,0 +1,17 @@
+.shop-page {
+  padding: 1rem 0;
+}
+
+.shop-page__title {
+  grid-column: span 12;
+
+  justify-self: center;
+}
+
+.shop-page__cards {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0.5rem;
+
+  padding: 2rem 1rem;
+}

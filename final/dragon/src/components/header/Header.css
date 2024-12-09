@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header__logo {
+  display: flex;
+
+  justify-self: center;
+  min-width: var(--min-screen-width);
+}
+
+.header__logo img {
+  width: 100px;
+  height: 94px;
+}
+
+.header__logo h1 {
+  margin-left: 40px;
+
+  color: white;
+}
+
+.nav {
+  display: flex;
+  margin-left: auto;
+
+  min-width: var(--min-screen-width);
+}
