@@ -2,13 +2,14 @@ import { MENU } from '../../data/const';
 import './GlobalNav.css';
 
 export function GlobalNav({
+  currentPage,
   navToHash,
 }) {
   const PREFIX = 'global-nav';
 
   const list = MENU.map(item => {
     return (
-      <li key={item.name} className={`${PREFIX}__item`}>
+      <li key={item.name} className={`${PREFIX}__item ${currentPage === item.path ? 'selected' : ''}`}>
         <a
           className={`${PREFIX}__link`}
           onClick={navToHash}

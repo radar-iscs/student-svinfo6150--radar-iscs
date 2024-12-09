@@ -39,9 +39,9 @@ function App() {
   
   return (
     <div className='app'>
-      <Header navToHash={navToHash} />
+      <Header currentPage={page} navToHash={navToHash} />
       {page === PATH_HOME && <HomePage />}
-      {page === PATH_SHOP && <ShopPage addOrder={addOrder} />}
+      {page === PATH_SHOP && <ShopPage setPage={setPage} addOrder={addOrder} />}
       {page === PATH_ORDERS && <OrdersPage orders={orders} />}
       <Footer />
     </div>

@@ -4,6 +4,7 @@ import Logo from '../../assets/logo.jpg';
 import './header.css';
 
 export function Header({
+  currentPage,
   navToHash,
 }) {
   const PREFIX = 'header';
@@ -14,7 +15,11 @@ export function Header({
         <img src={Logo} alt='All About Dragons Logo - A website full of all kinds of information about dragons' />
         <h1>All About Dragons</h1>
       </div>
-      <GlobalNav className='header__nav' navToHash={navToHash} />
+      <GlobalNav
+        className='header__nav'
+        currentPage={currentPage}
+        navToHash={navToHash}
+      />
     </header>
   );
 }

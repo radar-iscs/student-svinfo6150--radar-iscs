@@ -6,11 +6,11 @@ const ToastContext = createContext();
 export function ToastProvider({ children }) {
   const PREFIX = 'global-toast';
 
-  const [text, setText] = useState('');
+  const [content, setContent] = useState();
   const [visible, setVisible] = useState(false);
 
-  const showToast = (text, delay = 3000) => {
-    setText(text);
+  const showToast = (content, delay = 3000) => {
+    setContent(content);
     setVisible(true);
     setTimeout(() => setVisible(false), delay);
   };
@@ -19,7 +19,7 @@ export function ToastProvider({ children }) {
     <ToastContext.Provider value={{ showToast }}>
       {children}
       <div className={`${PREFIX} ${visible ? 'visible' : ''}`}>
-        {text}
+        {content}
       </div>
     </ToastContext.Provider>
   );

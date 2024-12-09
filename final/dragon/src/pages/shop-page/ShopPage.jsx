@@ -3,7 +3,7 @@ import ShopCard from '../../components/shop-card';
 import { SHOP_CARDS } from '../../data/merch';
 import './ShopPage.css';
 
-export function ShopPage({ addOrder }) {
+export function ShopPage({ setPage, addOrder }) {
   const PREFIX = 'shop-page';
 
   return (
@@ -19,6 +19,7 @@ export function ShopPage({ addOrder }) {
               title={card.title}
               image={card.image}
               contents={card.contents}
+              setPage={setPage}
               addOrder={addOrder}
             />
           );

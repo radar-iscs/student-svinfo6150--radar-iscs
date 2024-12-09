@@ -9,6 +9,7 @@ export function ShopCard({
   title,
   image,
   contents,
+  setPage,
   addOrder,
 }) {
   const PREFIX = 'shop-card';
@@ -34,7 +35,12 @@ export function ShopCard({
         content={'Order Now'}
         onClick={onClickBtn}
       />
-      <OrderDialog dialogRef={dialogRef} merchKey={merchKey} addOrder={addOrder} />
+      <OrderDialog
+        dialogRef={dialogRef}
+        merchKey={merchKey}
+        setPage={setPage}
+        addOrder={addOrder}
+      />
     </div>
   );
 }

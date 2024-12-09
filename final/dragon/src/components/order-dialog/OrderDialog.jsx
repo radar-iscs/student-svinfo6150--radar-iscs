@@ -7,10 +7,11 @@ import {
   SUBMIT_TYPE,
   BUTTON_VISUAL,
   LINK_VISUAL,
+  PATH_ORDERS,
 } from '../../data/const';
 import './OrderDialog.css';
 
-export function OrderDialog({ dialogRef, merchKey, addOrder }) {
+export function OrderDialog({ dialogRef, merchKey, setPage, addOrder }) {
   const PREFIX = 'order-dialog';
 
   const wrapperRef = useRef();
@@ -77,7 +78,23 @@ export function OrderDialog({ dialogRef, merchKey, addOrder }) {
     if (validateEmail() && validateShippingAddress()) {
       addOrder(merchKey, email, shippingAddress, getBillingAddress(), Date.now());
       closeDialog();
-      showToast('done!');
+
+      const onClickToastLink = () => {
+        setPage(PATH_ORDERS);
+      };
+      showToast(
+        <>
+          <p>Ordered Successfully!</p>
+          <p>
+            See your orders
+            <Button
+              content='HERE'
+              visual={LINK_VISUAL}
+              onClick={onClickToastLink}
+            />
+          </p>
+        </>
+      );
     }
   };
 
