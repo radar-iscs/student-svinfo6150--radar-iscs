@@ -15,7 +15,7 @@ export const SHOP_CARDS = {
   MERCH_KEY_MODEL: {
     title: 'Dragon Model Figures',
     image: Model,
-    contents: [
+    paragraphs: [
       'Material- Made of high quanlity plastic; handmade craftwork with high realistically Detailed.',
       'This simulation dragon model is very lovely made, with lifelike shape. Excellent detail and craftsmanship.',
       'Display in parties, exhibitions for decoration.\nWonderful collectibles for figure collectors.',
@@ -25,7 +25,7 @@ export const SHOP_CARDS = {
   MERCH_KEY_MODEL2: {
     title: 'Dragon Toys',
     image: Model2,
-    contents: [
+    paragraphs: [
       'Lava Dragon: Your stories need unforgettable characters to come alive, and this schleich dragon is guaranteed to rule the skies with its powerful wings and fire-breathing capabilities!',
       'Moveable parts: The lava dragon has moveable wings and jaw, so is sure to invoke fear into the hearts of the other schleich ELDRADOR CREATURES in your collection.',
       'Rule the land: Dragons are powerful creatures! And when it comes to dragon toys, this one stands out for its high quality - designed to last generations',
@@ -34,7 +34,7 @@ export const SHOP_CARDS = {
   MERCH_KEY_CLOTH: {
     title: 'Dragon Table Cover',
     image: Cloth,
-    contents: [
+    paragraphs: [
       '1 plastic table cover.',
       'Plastic table cover measures 54" x 84"',
       'Spread it out over a lunch or dinner table to keep it protected from spills and food crumbs when it\'s time to eat. Then, simply toss it away at the end of the day to make after-party cleanup a piece of cake',
@@ -44,7 +44,7 @@ export const SHOP_CARDS = {
   MERCH_KEY_STONE: {
     title: 'Stone Dragon Head',
     image: Stone,
-    contents: [
+    paragraphs: [
       'SPECIFICATION -- 1 pcs glaucophane stone dragon head skull statue, Size approx 1.4 inch height, 2.5 inch length, 1.0 inch width; Weight approx 45-55 gram.',
       'CRYSTAL CARVING -- Natural gemstones and crystals.Hand carved, well polished.Each blue glaucophane stone crystal dragon head figurine may vary slightly in size, stone grain and color.',
       'Blue Glaucophane -- This realistic dragon statue is made of glaucophane stone(also called blue amphibole). Glaucophane is named for its typical blue color. Glaucophane lifts the spirit, and helps to lighten the mood. A stone that encourages a positive attitude, as well as instilling feelings of peace and of harmony within.',

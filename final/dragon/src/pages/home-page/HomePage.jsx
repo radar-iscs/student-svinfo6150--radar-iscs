@@ -1,7 +1,7 @@
-import React from 'react';
-// import ArticlePanel from '../article-panel';
 
-// import { ARTICLES } from '../data/articles';
+import ArticlePanel from '../../components/article-panel';
+import { ARTICLES } from '../../data/article';
+
 import './HomePage.css';
 
 export function HomePage() {
@@ -9,14 +9,16 @@ export function HomePage() {
 
   return (
     <div className={PREFIX}>
-      {/* {ARTICLES.map(article =>
+      <h2 className={`${PREFIX}__title`}>Dragons Everywhere</h2>
+      {ARTICLES.map(article =>
         <ArticlePanel
           key={article.title}
           title={article.title}
-          content={article.content}
+          text={article.text}
+          paragraphs={article.paragraphs}
           image={article.image}
         />
-      )} */}
+      )}
     </div>
   );
 }

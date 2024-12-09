@@ -2,5 +2,9 @@
   display: flex;
   flex-direction: column;
   
-  padding: 1.5rem;
+  padding: 10px;
+}
+
+.home-page__title {
+  align-self: center;
 }

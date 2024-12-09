@@ -18,7 +18,7 @@ export function ShopPage({ setPage, addOrder }) {
               merchKey={merchKey}
               title={card.title}
               image={card.image}
-              contents={card.contents}
+              paragraphs={card.paragraphs}
               setPage={setPage}
               addOrder={addOrder}
             />

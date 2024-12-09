@@ -7,6 +7,7 @@ export function LoongPage() {
 
   return (
     <div className={PREFIX}>
+      <h2 className={`${PREFIX}__title`}>Have You Heard about Loong?</h2>
       {LOONG_ITEMS.map((item, index) => (
         <AccordionItem
           key={index}

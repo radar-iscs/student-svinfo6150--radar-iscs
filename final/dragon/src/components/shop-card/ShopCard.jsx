@@ -8,7 +8,7 @@ export function ShopCard({
   merchKey,
   title,
   image,
-  contents,
+  paragraphs,
   setPage,
   addOrder,
 }) {
@@ -27,8 +27,8 @@ export function ShopCard({
         alt='Picture of Card - Showing appearance of different dragon merch'
       />
       <h3>{title}</h3>
-      <ul className={`${PREFIX}__contents`}>
-        {contents.map((paragraph, index) => <li key={index}>{paragraph}</li>)}
+      <ul className={`${PREFIX}__paragraphs`}>
+        {paragraphs.map((paragraph, index) => <li key={index}>{paragraph}</li>)}
       </ul>
       <Button
         ariaLabel='Open Order Form'
