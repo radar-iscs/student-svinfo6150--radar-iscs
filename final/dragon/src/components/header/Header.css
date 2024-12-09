@@ -4,8 +4,8 @@ header {
   position: sticky;
   top: 0;
 
-  backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .header__logo {

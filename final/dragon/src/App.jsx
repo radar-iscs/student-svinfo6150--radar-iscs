@@ -5,7 +5,7 @@ import {
   PATH_HOME,
   PATH_LOONG,
   PATH_SHOP,
-  PATH_ORDER,
+  PATH_ORDERS,
   PATH_ABOUT,
 } from './data/const';
 

@@ -1,7 +1,7 @@
-import React from 'react';
+import { useRef } from 'react';
 import Button from '../button';
+import OrderDialog from '../order-dialog';
 
-import { LINK_VISUAL, PATH_ABOUT } from '../../data/const';
 import './ShopCard.css';
 
 export function ShopCard({
@@ -10,8 +10,10 @@ export function ShopCard({
   contents,
 }) {
   const PREFIX = 'shop-card';
+  const dialogRef = useRef();
 
   const onClickBtn = () => {
+    dialogRef.current.showModal();
   };
 
   return (
@@ -30,6 +32,7 @@ export function ShopCard({
         content={'Order Now'}
         onClick={onClickBtn}
       />
+      <OrderDialog dialogRef={dialogRef} />
     </div>
   );
 }

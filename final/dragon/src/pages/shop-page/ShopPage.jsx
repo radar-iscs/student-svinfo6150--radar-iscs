@@ -1,10 +1,9 @@
-import React from 'react';
 import ShopCard from '../../components/shop-card';
 
 import { SHOP_CARDS } from '../../data/shop-cards';
 import './ShopPage.css';
 
-export function ShopPage({ setPage }) {
+export function ShopPage() {
   const PREFIX = 'shop-page';
 
   return (

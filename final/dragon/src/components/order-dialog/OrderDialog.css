@@ -1,0 +1,85 @@
+.order-dialog {
+  padding: 0;
+
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.order-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.order-dialog[open] {
+  display: flex;
+
+  animation: open 0.5s ease-out;
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.order-dialog__wrapper {
+  padding: 16px 26px;;
+}
+
+.order-dialog__form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* to avoid default focus on the first input(email) when opening the dialog */
+.order-dialog__form>input:first-of-type {
+  opacity: 0;
+}
+
+.order-dialog__description {
+  margin-top: 10px;
+}
+
+.order-dialog__description.required:after {
+  margin-left: 5px;
+
+  font-size: 0.75rem;
+  content: '*required';
+  color: #fc5185;
+}
+
+.order-dialog__operation {
+  width: 250px;
+  margin: 3px 0;
+  padding: 0 10px;
+
+  font-size: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.order-dialog__operation:focus {
+  outline-width: 0;
+}
+
+.order-dialog__operation:disabled {
+  cursor: not-allowed;
+  border-color: rgba(118, 118, 118, 0.3);
+}
+
+.order-dialog__error {
+  color: #fc5185;
+}
+
+.order-dialog__btns {
+  display: flex;
+  gap: 20px;
+
+  margin: 1.2rem 0 0.5rem 0;
+  justify-content: space-between;
+}

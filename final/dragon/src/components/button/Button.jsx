@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   BUTTON_TYPE,
   SUBMIT_TYPE,

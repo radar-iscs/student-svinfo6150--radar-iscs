@@ -1,7 +1,7 @@
 export const PATH_HOME = '#/';
 export const PATH_LOONG = '#/loong';
 export const PATH_SHOP = '#/shop';
-export const PATH_ORDER = '#/order';
+export const PATH_ORDERS = '#/orders';
 export const PATH_ABOUT = '#/about';
 
 export const BUTTON_TYPE = 'button';
@@ -23,8 +23,8 @@ export const MENU = [
     path: PATH_SHOP,
   },
   {
-    name: 'Order',
-    path: PATH_ORDER,
+    name: 'My Orders',
+    path: PATH_ORDERS,
   },
   {
     name: 'About',
