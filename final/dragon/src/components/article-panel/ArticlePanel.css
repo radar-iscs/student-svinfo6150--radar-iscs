@@ -1,0 +1,33 @@
+.article-panel {
+  display: block;
+  padding: 10px 20px;
+  margin-bottom: 2rem;
+
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+.article-panel:nth-child(2n) .article-panel__img {
+  float: right;
+}
+
+.article-panel__img {
+  float: left;
+  
+  margin: 0.5rem;
+  max-width: 150px;
+}
+
+.article-panel__img img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.article-panel__words ul {
+  padding-left: 25px;
+}
+
+.article-panel__words .article-panel__title {
+  text-align: center;
+}

@@ -1,0 +1,46 @@
+.orders-page {
+  padding: 10px 0;
+}
+
+.orders-page__title {
+  justify-self: center;
+}
+
+.orders-page__list {
+  margin: 20px;
+}
+
+.orders-page__item {
+  display: flex;
+  padding: 10px 20px;
+
+  border-radius: 10px;
+  border-bottom: 1px solid #d4d4d4;
+  background-color: #F5F5F7;
+}
+
+.orders-page__item:first-child {
+  border-top: 1px solid #d4d4d4;
+}
+
+.orders-page__item.empty {
+  flex-direction: column;
+  text-align: center;
+}
+
+.orders-page__img {
+  width: 200px;
+  height: 150px;
+}
+
+.orders-page__paragraphs {
+  margin-left: 20px;
+}
+
+/* mobile layout */
+@media (max-width: 36rem) {
+  .orders-page__item {
+    flex-direction: column;
+    align-items: center;
+  }
+}

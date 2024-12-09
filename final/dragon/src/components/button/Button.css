@@ -1,0 +1,18 @@
+.custom-button {
+  cursor: pointer;
+}
+
+.custom-button.link {
+  text-decoration: underline;
+  color: blue;
+  background: none;
+}
+
+.custom-button.button {
+  min-width: 60px;
+  padding: 5px 10px;
+  
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+}
