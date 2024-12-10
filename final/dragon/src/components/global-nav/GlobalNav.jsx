@@ -33,7 +33,7 @@ export function GlobalNav({
 
   return (
     <nav ref={navRef} className={PREFIX}>
-      <ul className={`${PREFIX}__list ${navVisibleInMobile ? 'show' : ''}`}>{list}</ul>
+      <ul className={`${PREFIX}__list${navVisibleInMobile ? ` ${PREFIX}__list--show` : ''}`}>{list}</ul>
     </nav>
   );
 }

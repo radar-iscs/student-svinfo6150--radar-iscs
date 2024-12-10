@@ -14,6 +14,7 @@ export function AccordionItem({ title, text, image }) {
   return (
     <div className={PREFIX}>
       <Button
+        ariaLabel={`Accordion title for ${title}`}
         className={`${PREFIX}__title`}
         onClick={onClickAccordionTitle}
         content={
@@ -27,7 +28,7 @@ export function AccordionItem({ title, text, image }) {
       />
       {isOpen && <div className={`${PREFIX}__content`}>
         <div className={`${PREFIX}__text`}>{text}</div>
-        <img src={image} />
+        <img src={image} alt={`Picture of accordion item - Showing appearances of Loong under the title ${title}`} />
       </div>}
     </div>
   );

@@ -40,9 +40,14 @@ export function Header({
         <h1>All About Dragons</h1>
         {/* hamburger menu in mobile layout */}
         <Button 
-          ariaLabel='Show Navigation Menu'
+          ariaLabel='Show navigation menu'
           className={`${PREFIX}__dropdown-btn`}
-          content={<img src={MenuIcon} />}
+          content={
+            <img
+              src={MenuIcon}
+              alt='A three-lined icon to represent the button is for clicking and showing navigation menu'
+            />
+          }
           onClick={onClickNavBtn}
         />
       </div>

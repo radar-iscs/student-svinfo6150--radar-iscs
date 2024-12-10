@@ -24,3 +24,14 @@
 
   text-align: center;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .global-toast {
+    transform: none;
+    transition: none;
+  }
+
+  .global-toast.visible {
+    transform: none;
+  }
+}

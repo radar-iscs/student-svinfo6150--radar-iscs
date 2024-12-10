@@ -24,14 +24,14 @@ export function ShopCard({
       <img
         className={`${PREFIX}__img`}
         src={image}
-        alt='Picture of Card - Showing appearance of different dragon merch'
+        alt={`Picture of cards in Shop Page - Showing appearance of dragon merch ${title}`}
       />
       <h3>{title}</h3>
       <ul className={`${PREFIX}__paragraphs`}>
         {paragraphs.map((paragraph, index) => <li key={index}>{paragraph}</li>)}
       </ul>
       <Button
-        ariaLabel='Open Order Form'
+        ariaLabel='Open order form'
         className={`${PREFIX}__btn`}
         content={'Order Now'}
         onClick={onClickBtn}

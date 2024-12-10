@@ -67,34 +67,34 @@ export function SettingsPanel({
     <div className={PREFIX}>
       <div ref={sortRef} className={`${PREFIX}__wrapper`}>
         <Button
-          ariaLabel='Show Sort Options'
+          ariaLabel='Show sort options of orders'
           className={`${PREFIX}__dropdown-btn`}
-          content={<><img src={SortIcon} />Sort</>}
+          content={<><img src={SortIcon} alt='Icon to represent sort button' />Sort</>}
           onClick={onClickSortBtn}
         />
         {sortOptionsVisible && (
           <div className={`${PREFIX}__dropdown-list`}>
-            <div
+            <Button
+              ariaLabel='Sort option for newest order first displayed'
               className={`${PREFIX}__dropdown-item`}
+              content='Newest Order First'
               onClick={() => onClickSortOption(SORT_TYPE_NEWEST)}
-            >
-              Newest Order First
-            </div>
-            <div
+            />
+            <Button
+              ariaLabel='Sort option for oldest order first displayed'
               className={`${PREFIX}__dropdown-item`}
+              content='Oldest Order First'
               onClick={() => onClickSortOption(SORT_TYPE_OLDEST)}
-            >
-              Oldest Order First
-            </div>
+            />
           </div>
         )}
       </div>
 
       <div ref={filterRef} className={`${PREFIX}__wrapper`}>
         <Button
-          ariaLabel='Show Filter Options'
+          ariaLabel='Show filter options of orders'
           className={`${PREFIX}__dropdown-btn`}
-          content={<><img src={FilterIcon} />Filter</>}
+          content={<><img src={FilterIcon} alt='Icon to represent filter button' />Filter</>}
           onClick={onClickFilterBtn}
         />
         {filterOptionsVisible && (

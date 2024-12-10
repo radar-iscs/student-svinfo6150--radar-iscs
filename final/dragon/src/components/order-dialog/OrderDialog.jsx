@@ -90,10 +90,9 @@ export function OrderDialog({ dialogRef, merchKey, setPage, addOrder }) {
         <>
           <p>Ordered Successfully!</p>
           <p>
-            
             <Button
-              ariaLabel='Go to Orders Page'
-              content='View your orders'
+              ariaLabel='Go to Orders Page to view your orders'
+              content='View Your Orders'
               visual={LINK_VISUAL}
               onClick={onClickToastLink}
             />
@@ -132,6 +131,7 @@ export function OrderDialog({ dialogRef, merchKey, setPage, addOrder }) {
           method='POST'
           id='order-form'
         >
+          {/* to avoid default focus on the first input(email) when opening the dialog */}
           <input autoFocus/>
           {/* email */}
           <label className={`${PREFIX}__description required`} htmlFor='email'>Email</label>
@@ -176,15 +176,16 @@ export function OrderDialog({ dialogRef, merchKey, setPage, addOrder }) {
         </form>
       <div className={`${PREFIX}__btns`}>
         <Button
-          ariaLabel='Submit Order Form'
+          ariaLabel='Submit order form'
+          className={`${PREFIX}__submit-btn`}
           content='Submit'
           type={SUBMIT_TYPE}
-          visual={LINK_VISUAL}
+          visual={BUTTON_VISUAL}
           form='order-form'
           onClick={onClickSubmitBtn}
         />
         <Button
-          ariaLabel='Close Order Form'
+          ariaLabel='Close order form'
           content='Close'
           type={BUTTON_TYPE}
           visual={BUTTON_VISUAL}

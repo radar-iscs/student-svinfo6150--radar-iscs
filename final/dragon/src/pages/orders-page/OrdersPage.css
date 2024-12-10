@@ -36,3 +36,11 @@
 .orders-page__paragraphs {
   margin-left: 20px;
 }
+
+/* mobile layout */
+@media (max-width: 36rem) {
+  .orders-page__item {
+    flex-direction: column;
+    align-items: center;
+  }
+}

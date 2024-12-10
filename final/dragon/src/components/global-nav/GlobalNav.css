@@ -41,7 +41,7 @@
     background-color: rgba(0, 0, 0, 0.9);
   }
   
-  .global-nav__list.show {
+  .global-nav__list--show {
     display: flex;
   }
 

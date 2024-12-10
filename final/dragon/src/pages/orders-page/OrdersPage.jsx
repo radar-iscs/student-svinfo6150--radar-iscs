@@ -31,15 +31,12 @@ export function OrdersPage({ orders, setPage }) {
         {!orders.length && 
           <div className={`${PREFIX}__item empty`}>
             <p>There are no orders now.</p>
-            <p>
-              Go to 
-              <Button
-                ariaLabel='Go to Shop Page'
-                content='Shop'
-                visual={LINK_VISUAL}
-                onClick={() => setPage(PATH_SHOP)}
-              />
-            </p>
+            <Button
+              ariaLabel='Go to Shop Page'
+              content='Go To Shop'
+              visual={LINK_VISUAL}
+              onClick={() => setPage(PATH_SHOP)}
+            />
           </div>
         }
         {orders
@@ -55,13 +52,13 @@ export function OrdersPage({ orders, setPage }) {
               <img
                 className={`${PREFIX}__img`}
                 src={merch.image}
-                alt='Picture of Card - Showing appearance of different dragon merch'
+                alt={`Picture of Card - Showing appearance of dragon merch ${merch.title}`}
               />
               <div className={`${PREFIX}__paragraphs`}>
                 <p>{`Merch Name: ${merch.title}`}</p>
                 <p>{`Email: ${order.email}`}</p>
                 <p>{`Shipping Address: ${order.shippingAddress}`}</p>
-                {order.billAddress && <p>{`Billing Address: ${order.billAddress}`}</p>}
+                {order.billingAddress && <p>{`Billing Address: ${order.billingAddress}`}</p>}
                 <p>{`Order Time: ${new Date(order.time).toLocaleString()}`}</p>
               </div>
             </div>

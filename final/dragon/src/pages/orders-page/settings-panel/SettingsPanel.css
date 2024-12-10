@@ -25,7 +25,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 160px;
   top: 35px;
   right: 0;
   padding: 6px 0;
@@ -50,9 +50,13 @@
   border-bottom: 7px solid #cccccc;;
 }
 
-.settings-panel__dropdown-item {
+.settings-panel__dropdown-item.custom-button {
   padding: 4px 10px;
-  cursor: pointer;
+
+  text-align: left;
+  font-size: 1rem;
+  border-radius: 0;
+  background-color: unset;
 }
 
 .settings-panel__dropdown-item:hover {
