@@ -1,0 +1,37 @@
+.global-toast {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%); 
+  padding: 10px 20px;
+  
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #F5F5F7;
+  z-index: 9999;
+
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.global-toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(20px);
+}
+
+.global-toast p {
+  margin: 0;
+
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .global-toast {
+    transform: none;
+    transition: none;
+  }
+
+  .global-toast.visible {
+    transform: none;
+  }
+}

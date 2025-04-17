@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.header__logo {
+  display: flex;
+
+  justify-self: center;
+}
+
+.header__logo img {
+  width: 100px;
+  height: 94px;
+}
+
+.header__logo h1 {
+  width: 100%;
+  margin-left: 40px;
+
+  color: white;
+}
+
+.header__dropdown-btn {
+  display: none;
+
+  line-height: 18px;
+  background-color: unset;
+}
+
+.header__dropdown-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+/* mobile layout */
+@media (max-width: 36rem) {
+  .header__dropdown-btn {
+    display: block;
+  }
+}

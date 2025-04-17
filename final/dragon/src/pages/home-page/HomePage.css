@@ -1,0 +1,10 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  
+  padding: 10px;
+}
+
+.home-page__title {
+  align-self: center;
+}

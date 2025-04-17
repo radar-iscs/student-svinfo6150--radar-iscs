@@ -1,0 +1,18 @@
+.app {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.skiplink {
+  position: absolute;
+  left: -1000px;
+  z-index: 10;
+  background-color: white;
+}
+
+.skiplink:focus {
+  left: 0;
+}
